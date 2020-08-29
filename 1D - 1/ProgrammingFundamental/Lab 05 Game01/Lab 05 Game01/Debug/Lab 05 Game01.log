@@ -1,0 +1,3 @@
+﻿  ass2.cpp
+C:\Users\Administrator\Desktop\visual\Lab 05 Game01\Lab 05 Game01\ass2.cpp(19,14): warning C4838:  conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\visual\Lab 05 Game01\Lab 05 Game01\ass2.cpp(19,17): warning C4838:  conversion from 'int' to 'SHORT' requires a narrowing conversion
