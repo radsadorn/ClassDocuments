@@ -3,11 +3,11 @@
 
 ## 1D | Semester 1
 
-* [x] Introduction to Computer Engineering
-* [x] Programming Fundamental
-* [x] Object Oriented Programming
+* Introduction to Computer Engineering
+* Programming Fundamental
+* Object Oriented Programming
 
 ## 2D | Semester 2
 
-* [x] Data Communications
-* [x] Data Structures and Algolithm
+* Data Communications
+* Data Structures and Algolithm
