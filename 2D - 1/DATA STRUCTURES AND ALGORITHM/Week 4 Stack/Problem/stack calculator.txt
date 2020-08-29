@@ -11,14 +11,6 @@ Array
             [testcase_output] => * Stack Calculator *
 Enter arguments : 5 6 +
 11
-
-            [item_pass] => no
-            [output_to_show] => Enter Input : 5 6 +
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : 5 6 +
-Parentheses : Matched ! ! !
-
         )
 
     [1] => Array
@@ -32,14 +24,6 @@ Parentheses : Matched ! ! !
             [testcase_output] => * Stack Calculator *
 Enter arguments : 3 DUP +
 6
-
-            [item_pass] => no
-            [output_to_show] => Enter Input : 3 DUP +
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : 3 DUP +
-Parentheses : Matched ! ! !
-
         )
 
     [2] => Array
@@ -53,14 +37,6 @@ Parentheses : Matched ! ! !
             [testcase_output] => * Stack Calculator *
 Enter arguments : 6 5 5 7 * - /
 5
-
-            [item_pass] => no
-            [output_to_show] => Enter Input : 6 5 5 7 * - /
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : 6 5 5 7 * - /
-Parentheses : Matched ! ! !
-
         )
 
     [3] => Array
@@ -74,14 +50,6 @@ Parentheses : Matched ! ! !
             [testcase_output] => * Stack Calculator *
 Enter arguments : a b c +
 Invalid instruction: a
-
-            [item_pass] => no
-            [output_to_show] => Enter Input : a b c +
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : a b c +
-Parentheses : Matched ! ! !
-
         )
 
     [4] => Array
@@ -95,14 +63,6 @@ Parentheses : Matched ! ! !
             [testcase_output] => * Stack Calculator *
 Enter arguments : 12
 12
-
-            [item_pass] => no
-            [output_to_show] => Enter Input : 12
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : 12
-Parentheses : Matched ! ! !
-
         )
 
     [5] => Array
@@ -116,14 +76,6 @@ Parentheses : Matched ! ! !
             [testcase_output] => * Stack Calculator *
 Enter arguments : 9 14 DUP + - 3 POP
 19
-
-            [item_pass] => no
-            [output_to_show] => Enter Input : 9 14 DUP + - 3 POP
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : 9 14 DUP + - 3 POP
-Parentheses : Matched ! ! !
-
         )
 
     [6] => Array
@@ -137,14 +89,6 @@ Parentheses : Matched ! ! !
             [testcase_output] => * Stack Calculator *
 Enter arguments : 1 2 3 4 5 POP POP POP
 2
-
-            [item_pass] => no
-            [output_to_show] => Enter Input : 1 2 3 4 5 POP POP POP
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : 1 2 3 4 5 POP POP POP
-Parentheses : Matched ! ! !
-
         )
 
     [7] => Array
@@ -158,14 +102,6 @@ Parentheses : Matched ! ! !
             [testcase_output] => * Stack Calculator *
 Enter arguments : 13 DUP 4 POP 5 DUP + DUP + -
 7
-
-            [item_pass] => no
-            [output_to_show] => Enter Input : 13 DUP 4 POP 5 DUP + DUP + -
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : 13 DUP 4 POP 5 DUP + DUP + -
-Parentheses : Matched ! ! !
-
         )
 
     [8] => Array
@@ -179,14 +115,6 @@ Parentheses : Matched ! ! !
             [testcase_output] => * Stack Calculator *
 Enter arguments : 4 POP
 0
-
-            [item_pass] => no
-            [output_to_show] => Enter Input : 4 POP
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : 4 POP
-Parentheses : Matched ! ! !
-
         )
 
     [9] => Array
@@ -200,14 +128,6 @@ Parentheses : Matched ! ! !
             [testcase_output] => * Stack Calculator *
 Enter arguments : 5 8 + 4 5 1 + POP 13 +
 17
-
-            [item_pass] => no
-            [output_to_show] => Enter Input : 5 8 + 4 5 1 + POP 13 +
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : 5 8 + 4 5 1 + POP 13 +
-Parentheses : Matched ! ! !
-
         )
 
 )

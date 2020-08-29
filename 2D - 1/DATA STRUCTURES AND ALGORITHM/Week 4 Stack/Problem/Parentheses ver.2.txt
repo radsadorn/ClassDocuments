@@ -10,14 +10,6 @@ Array
             [testcase_note] => 1
             [testcase_output] => Enter Input : ()[]
 Parentheses : Matched ! ! !
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : ()[]
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : ()[]
-Parentheses : Matched ! ! !
-
         )
 
     [1] => Array
@@ -30,14 +22,6 @@ Parentheses : Matched ! ! !
             [testcase_note] => 2
             [testcase_output] => Enter Input : [](]
 Parentheses : Unmatched ! ! !
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : [](]
-Parentheses : Unmatched ! ! !
-
-            [testcase_student] => Enter Input : [](]
-Parentheses : Unmatched ! ! !
-
         )
 
     [2] => Array
@@ -50,14 +34,6 @@ Parentheses : Unmatched ! ! !
             [testcase_note] => 3
             [testcase_output] => Enter Input : ](]
 Parentheses : Unmatched ! ! !
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : ](]
-Parentheses : Unmatched ! ! !
-
-            [testcase_student] => Enter Input : ](]
-Parentheses : Unmatched ! ! !
-
         )
 
     [3] => Array
@@ -70,14 +46,6 @@ Parentheses : Unmatched ! ! !
             [testcase_note] => 4
             [testcase_output] => Enter Input : (
 Parentheses : Unmatched ! ! !
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : (
-Parentheses : Unmatched ! ! !
-
-            [testcase_student] => Enter Input : (
-Parentheses : Unmatched ! ! !
-
         )
 
     [4] => Array
@@ -90,14 +58,6 @@ Parentheses : Unmatched ! ! !
             [testcase_note] => 5
             [testcase_output] => Enter Input : ([[[[]]()()()]])(()[][])(([]))([])
 Parentheses : Matched ! ! !
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : ([[[[]]()()()]])(()[][])(([]))([])
-Parentheses : Matched ! ! !
-
-            [testcase_student] => Enter Input : ([[[[]]()()()]])(()[][])(([]))([])
-Parentheses : Matched ! ! !
-
         )
 
     [5] => Array
@@ -110,14 +70,6 @@ Parentheses : Matched ! ! !
             [testcase_note] => 6
             [testcase_output] => Enter Input : (((()[]))))
 Parentheses : Unmatched ! ! !
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : (((()[]))))
-Parentheses : Unmatched ! ! !
-
-            [testcase_student] => Enter Input : (((()[]))))
-Parentheses : Unmatched ! ! !
-
         )
 
     [6] => Array
@@ -130,14 +82,6 @@ Parentheses : Unmatched ! ! !
             [testcase_note] => 7
             [testcase_output] => Enter Input : (((()[]))
 Parentheses : Unmatched ! ! !
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : (((()[]))
-Parentheses : Unmatched ! ! !
-
-            [testcase_student] => Enter Input : (((()[]))
-Parentheses : Unmatched ! ! !
-
         )
 
     [7] => Array
@@ -150,14 +94,6 @@ Parentheses : Unmatched ! ! !
             [testcase_note] => 8
             [testcase_output] => Enter Input : (()[]))))
 Parentheses : Unmatched ! ! !
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : (()[]))))
-Parentheses : Unmatched ! ! !
-
-            [testcase_student] => Enter Input : (()[]))))
-Parentheses : Unmatched ! ! !
-
         )
 
 )

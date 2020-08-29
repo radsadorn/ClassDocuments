@@ -12,18 +12,6 @@ Array
 10
 40
 30
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : 1 10,5 20,3 30,3 40,4 50
-10
-40
-30
-
-            [testcase_student] => Enter Input : 1 10,5 20,3 30,3 40,4 50
-10
-40
-30
-
         )
 
     [1] => Array
@@ -37,16 +25,6 @@ Array
             [testcase_output] => Enter Input : 90 8,68 99,44 3,44 102,50 2
 102
 3
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : 90 8,68 99,44 3,44 102,50 2
-102
-3
-
-            [testcase_student] => Enter Input : 90 8,68 99,44 3,44 102,50 2
-102
-3
-
         )
 
     [2] => Array
@@ -66,28 +44,6 @@ Array
 88
 54
 4
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : 1 99,1 56,1 12,23 88,22 9,3 109,45 54,90 5,34 4,88 76
-12
-56
-99
-109
-9
-88
-54
-4
-
-            [testcase_student] => Enter Input : 1 99,1 56,1 12,23 88,22 9,3 109,45 54,90 5,34 4,88 76
-12
-56
-99
-109
-9
-88
-54
-4
-
         )
 
     [3] => Array
@@ -106,26 +62,6 @@ Array
 12
 54
 4
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : 777 99,1 56,28 12,23 88,22 9,3 109,45 54,90 5,34 4,88 76
-56
-109
-9
-88
-12
-54
-4
-
-            [testcase_student] => Enter Input : 777 99,1 56,28 12,23 88,22 9,3 109,45 54,90 5,34 4,88 76
-56
-109
-9
-88
-12
-54
-4
-
         )
 
     [4] => Array
@@ -144,26 +80,6 @@ Array
 54
 8
 46
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : 235 49,3 56,28 65,46 8,22 69,3 109,45 54,90 51,34 46,88 6
-56
-65
-109
-69
-54
-8
-46
-
-            [testcase_student] => Enter Input : 235 49,3 56,28 65,46 8,22 69,3 109,45 54,90 51,34 46,88 6
-56
-65
-109
-69
-54
-8
-46
-
         )
 
 )

@@ -11,16 +11,6 @@ Array
             [testcase_output] => Enter Input : G H H H H P
 3
 PHG
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : G H H H H P
-3
-PHG
-
-            [testcase_student] => Enter Input : G H H H H P
-3
-PHG
-
         )
 
     [1] => Array
@@ -35,18 +25,6 @@ PHG
 2
 DL
 Combo : 2 ! ! !
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : L C C X X X C D
-2
-DL
-Combo : 2 ! ! !
-
-            [testcase_student] => Enter Input : L C C X X X C D
-2
-DL
-Combo : 2 ! ! !
-
         )
 
     [2] => Array
@@ -60,16 +38,6 @@ Combo : 2 ! ! !
             [testcase_output] => Enter Input : C C C
 0
 Empty
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : C C C
-0
-Empty
-
-            [testcase_student] => Enter Input : C C C
-0
-Empty
-
         )
 
     [3] => Array
@@ -83,17 +51,7 @@ Empty
             [testcase_output] => Enter Input : A
 1
 A
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : A
-1
-A
-
-            [testcase_student] => Enter Input : A
-1
-A
-
-        )
+	)
 
     [4] => Array
         (
@@ -106,16 +64,6 @@ A
             [testcase_output] => Enter Input : A B B A
 4
 ABBA
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : A B B A
-4
-ABBA
-
-            [testcase_student] => Enter Input : A B B A
-4
-ABBA
-
         )
 
     [5] => Array
@@ -130,18 +78,6 @@ ABBA
 0
 Empty
 Combo : 6 ! ! !
-
-            [item_pass] => yes
-            [output_to_show] => Enter Input : O O P Y Y E R R R E E Y P P K K K O
-0
-Empty
-Combo : 6 ! ! !
-
-            [testcase_student] => Enter Input : O O P Y Y E R R R E E Y P P K K K O
-0
-Empty
-Combo : 6 ! ! !
-
         )
 
 )
