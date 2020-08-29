@@ -1,0 +1,154 @@
+Array
+(
+    [0] => Array
+        (
+            [testcase_id] => 949
+            [exercise_id] => 1301153
+            [testcase_content] => A 4,A 3,B,A 5,A 8,B
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 1
+            [testcase_output] => Enter Input : A 4,A 3,B,A 5,A 8,B
+2
+1
+
+            [item_pass] => yes
+            [output_to_show] => Enter Input : A 4,A 3,B,A 5,A 8,B
+2
+1
+
+            [testcase_student] => Enter Input : A 4,A 3,B,A 5,A 8,B
+2
+1
+
+        )
+
+    [1] => Array
+        (
+            [testcase_id] => 950
+            [exercise_id] => 1301153
+            [testcase_content] => A 8,A 3,A 2,A 6,A 2,B,A 10,B
+            [active] => yes
+            [show_to_student] => no
+            [testcase_note] => 2
+            [testcase_output] => Enter Input : A 8,A 3,A 2,A 6,A 2,B,A 10,B
+3
+1
+
+            [item_pass] => yes
+            [output_to_show] => Enter Input : A 8,A 3,A 2,A 6,A 2,B,A 10,B
+3
+1
+
+            [testcase_student] => Enter Input : A 8,A 3,A 2,A 6,A 2,B,A 10,B
+3
+1
+
+        )
+
+    [2] => Array
+        (
+            [testcase_id] => 951
+            [exercise_id] => 1301153
+            [testcase_content] => B,B,B,A 10,A 1,A 3,A 2,B,A 1,A 1,B,A 5,A 4,B
+            [active] => yes
+            [show_to_student] => no
+            [testcase_note] => 3
+            [testcase_output] => Enter Input : B,B,B,A 10,A 1,A 3,A 2,B,A 1,A 1,B,A 5,A 4,B
+0
+0
+0
+3
+4
+3
+
+            [item_pass] => yes
+            [output_to_show] => Enter Input : B,B,B,A 10,A 1,A 3,A 2,B,A 1,A 1,B,A 5,A 4,B
+0
+0
+0
+3
+4
+3
+
+            [testcase_student] => Enter Input : B,B,B,A 10,A 1,A 3,A 2,B,A 1,A 1,B,A 5,A 4,B
+0
+0
+0
+3
+4
+3
+
+        )
+
+    [3] => Array
+        (
+            [testcase_id] => 952
+            [exercise_id] => 1301153
+            [testcase_content] => A 1,A 2,A 3,A 4,B,A 3,A 2,B,A 99,A 5,B,A 4,B,A 67
+            [active] => yes
+            [show_to_student] => no
+            [testcase_note] => 4
+            [testcase_output] => Enter Input : A 1,A 2,A 3,A 4,B,A 3,A 2,B,A 99,A 5,B,A 4,B,A 67
+1
+3
+2
+3
+
+            [item_pass] => yes
+            [output_to_show] => Enter Input : A 1,A 2,A 3,A 4,B,A 3,A 2,B,A 99,A 5,B,A 4,B,A 67
+1
+3
+2
+3
+
+            [testcase_student] => Enter Input : A 1,A 2,A 3,A 4,B,A 3,A 2,B,A 99,A 5,B,A 4,B,A 67
+1
+3
+2
+3
+
+        )
+
+    [4] => Array
+        (
+            [testcase_id] => 953
+            [exercise_id] => 1301153
+            [testcase_content] => A 100,A 50,A 25,A 12,A 6,B,B,B,A 76,B,A 61,B,A 1,B,B,A 6,A 11,B
+            [active] => yes
+            [show_to_student] => no
+            [testcase_note] => 5
+            [testcase_output] => Enter Input : A 100,A 50,A 25,A 12,A 6,B,B,B,A 76,B,A 61,B,A 1,B,B,A 6,A 11,B
+5
+5
+5
+2
+3
+4
+4
+4
+
+            [item_pass] => yes
+            [output_to_show] => Enter Input : A 100,A 50,A 25,A 12,A 6,B,B,B,A 76,B,A 61,B,A 1,B,B,A 6,A 11,B
+5
+5
+5
+2
+3
+4
+4
+4
+
+            [testcase_student] => Enter Input : A 100,A 50,A 25,A 12,A 6,B,B,B,A 76,B,A 61,B,A 1,B,B,A 6,A 11,B
+5
+5
+5
+2
+3
+4
+4
+4
+
+        )
+
+)

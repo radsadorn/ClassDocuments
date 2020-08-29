@@ -1,0 +1,213 @@
+Array
+(
+    [0] => Array
+        (
+            [testcase_id] => 997
+            [exercise_id] => 1301161
+            [testcase_content] => 5 6 +
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 1
+            [testcase_output] => * Stack Calculator *
+Enter arguments : 5 6 +
+11
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : 5 6 +
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : 5 6 +
+Parentheses : Matched ! ! !
+
+        )
+
+    [1] => Array
+        (
+            [testcase_id] => 998
+            [exercise_id] => 1301161
+            [testcase_content] => 3 DUP +
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 2
+            [testcase_output] => * Stack Calculator *
+Enter arguments : 3 DUP +
+6
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : 3 DUP +
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : 3 DUP +
+Parentheses : Matched ! ! !
+
+        )
+
+    [2] => Array
+        (
+            [testcase_id] => 999
+            [exercise_id] => 1301161
+            [testcase_content] => 6 5 5 7 * - /
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 3
+            [testcase_output] => * Stack Calculator *
+Enter arguments : 6 5 5 7 * - /
+5
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : 6 5 5 7 * - /
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : 6 5 5 7 * - /
+Parentheses : Matched ! ! !
+
+        )
+
+    [3] => Array
+        (
+            [testcase_id] => 1000
+            [exercise_id] => 1301161
+            [testcase_content] => a b c +
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 4
+            [testcase_output] => * Stack Calculator *
+Enter arguments : a b c +
+Invalid instruction: a
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : a b c +
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : a b c +
+Parentheses : Matched ! ! !
+
+        )
+
+    [4] => Array
+        (
+            [testcase_id] => 1001
+            [exercise_id] => 1301161
+            [testcase_content] => 12
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 5
+            [testcase_output] => * Stack Calculator *
+Enter arguments : 12
+12
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : 12
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : 12
+Parentheses : Matched ! ! !
+
+        )
+
+    [5] => Array
+        (
+            [testcase_id] => 1002
+            [exercise_id] => 1301161
+            [testcase_content] => 9 14 DUP + - 3 POP
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 6
+            [testcase_output] => * Stack Calculator *
+Enter arguments : 9 14 DUP + - 3 POP
+19
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : 9 14 DUP + - 3 POP
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : 9 14 DUP + - 3 POP
+Parentheses : Matched ! ! !
+
+        )
+
+    [6] => Array
+        (
+            [testcase_id] => 1003
+            [exercise_id] => 1301161
+            [testcase_content] => 1 2 3 4 5 POP POP POP
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 7
+            [testcase_output] => * Stack Calculator *
+Enter arguments : 1 2 3 4 5 POP POP POP
+2
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : 1 2 3 4 5 POP POP POP
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : 1 2 3 4 5 POP POP POP
+Parentheses : Matched ! ! !
+
+        )
+
+    [7] => Array
+        (
+            [testcase_id] => 1004
+            [exercise_id] => 1301161
+            [testcase_content] => 13 DUP 4 POP 5 DUP + DUP + -
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 8
+            [testcase_output] => * Stack Calculator *
+Enter arguments : 13 DUP 4 POP 5 DUP + DUP + -
+7
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : 13 DUP 4 POP 5 DUP + DUP + -
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : 13 DUP 4 POP 5 DUP + DUP + -
+Parentheses : Matched ! ! !
+
+        )
+
+    [8] => Array
+        (
+            [testcase_id] => 1005
+            [exercise_id] => 1301161
+            [testcase_content] => 4 POP
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 9
+            [testcase_output] => * Stack Calculator *
+Enter arguments : 4 POP
+0
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : 4 POP
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : 4 POP
+Parentheses : Matched ! ! !
+
+        )
+
+    [9] => Array
+        (
+            [testcase_id] => 1006
+            [exercise_id] => 1301161
+            [testcase_content] => 5 8 + 4 5 1 + POP 13 +
+            [active] => yes
+            [show_to_student] => no
+            [testcase_note] => 10
+            [testcase_output] => * Stack Calculator *
+Enter arguments : 5 8 + 4 5 1 + POP 13 +
+17
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : 5 8 + 4 5 1 + POP 13 +
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : 5 8 + 4 5 1 + POP 13 +
+Parentheses : Matched ! ! !
+
+        )
+
+)

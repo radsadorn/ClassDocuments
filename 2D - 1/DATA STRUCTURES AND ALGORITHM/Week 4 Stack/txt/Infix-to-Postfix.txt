@@ -1,0 +1,203 @@
+Array
+(
+    [0] => Array
+        (
+            [testcase_id] => 987
+            [exercise_id] => 1301160
+            [testcase_content] => a+b
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 1
+            [testcase_output] => Enter Infix : a+b
+Postfix : ab+
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : a+b
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : a+b
+Parentheses : Matched ! ! !
+
+        )
+
+    [1] => Array
+        (
+            [testcase_id] => 988
+            [exercise_id] => 1301160
+            [testcase_content] => a+b*c
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 2
+            [testcase_output] => Enter Infix : a+b*c
+Postfix : abc*+
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : a+b*c
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : a+b*c
+Parentheses : Matched ! ! !
+
+        )
+
+    [2] => Array
+        (
+            [testcase_id] => 989
+            [exercise_id] => 1301160
+            [testcase_content] => a*b+c
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 3
+            [testcase_output] => Enter Infix : a*b+c
+Postfix : ab*c+
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : a*b+c
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : a*b+c
+Parentheses : Matched ! ! !
+
+        )
+
+    [3] => Array
+        (
+            [testcase_id] => 990
+            [exercise_id] => 1301160
+            [testcase_content] => a+b*c-d
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 4
+            [testcase_output] => Enter Infix : a+b*c-d
+Postfix : abc*+d-
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : a+b*c-d
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : a+b*c-d
+Parentheses : Matched ! ! !
+
+        )
+
+    [4] => Array
+        (
+            [testcase_id] => 991
+            [exercise_id] => 1301160
+            [testcase_content] => a+b*c-(d/e+f)*g
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 5
+            [testcase_output] => Enter Infix : a+b*c-(d/e+f)*g
+Postfix : abc*+de/f+g*-
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : a+b*c-(d/e+f)*g
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : a+b*c-(d/e+f)*g
+Parentheses : Matched ! ! !
+
+        )
+
+    [5] => Array
+        (
+            [testcase_id] => 992
+            [exercise_id] => 1301160
+            [testcase_content] => A+(B*C-(D/E^F)*G)*H
+            [active] => yes
+            [show_to_student] => no
+            [testcase_note] => 6
+            [testcase_output] => Enter Infix : A+(B*C-(D/E^F)*G)*H
+Postfix : ABC*DEF^/G*-H*+
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : A+(B*C-(D/E^F)*G)*H
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : A+(B*C-(D/E^F)*G)*H
+Parentheses : Matched ! ! !
+
+        )
+
+    [6] => Array
+        (
+            [testcase_id] => 993
+            [exercise_id] => 1301160
+            [testcase_content] => K+L-M*N+(O^P)*W/U/V*T+Q
+            [active] => yes
+            [show_to_student] => no
+            [testcase_note] => 7
+            [testcase_output] => Enter Infix : K+L-M*N+(O^P)*W/U/V*T+Q
+Postfix : KL+MN*-OP^W*U/V/T*+Q+
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : K+L-M*N+(O^P)*W/U/V*T+Q
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : K+L-M*N+(O^P)*W/U/V*T+Q
+Parentheses : Matched ! ! !
+
+        )
+
+    [7] => Array
+        (
+            [testcase_id] => 994
+            [exercise_id] => 1301160
+            [testcase_content] => G+A+(U-R)^I
+            [active] => yes
+            [show_to_student] => no
+            [testcase_note] => 8
+            [testcase_output] => Enter Infix : G+A+(U-R)^I
+Postfix : GA+UR-I^+
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : G+A+(U-R)^I
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : G+A+(U-R)^I
+Parentheses : Matched ! ! !
+
+        )
+
+    [8] => Array
+        (
+            [testcase_id] => 995
+            [exercise_id] => 1301160
+            [testcase_content] => (A^B*C)/(X*Y-Z)+P
+            [active] => yes
+            [show_to_student] => no
+            [testcase_note] => 9
+            [testcase_output] => Enter Infix : (A^B*C)/(X*Y-Z)+P
+Postfix : AB^C*XY*Z-/P+
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : (A^B*C)/(X*Y-Z)+P
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : (A^B*C)/(X*Y-Z)+P
+Parentheses : Matched ! ! !
+
+        )
+
+    [9] => Array
+        (
+            [testcase_id] => 996
+            [exercise_id] => 1301160
+            [testcase_content] => (A+B)*C+D/(E-F*G)-H
+            [active] => yes
+            [show_to_student] => no
+            [testcase_note] => 10
+            [testcase_output] => Enter Infix : (A+B)*C+D/(E-F*G)-H
+Postfix : AB+C*DEFG*-/+H-
+
+            [item_pass] => no
+            [output_to_show] => Enter Input : (A+B)*C+D/(E-F*G)-H
+Parentheses : Matched ! ! !
+
+            [testcase_student] => Enter Input : (A+B)*C+D/(E-F*G)-H
+Parentheses : Matched ! ! !
+
+        )
+
+)
