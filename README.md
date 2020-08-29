@@ -12,7 +12,6 @@
 ### Semester 1 - 2
 * Object Oriented Programming
 
-####################
 
 ## ✔️ 2D | Semester 2
 
