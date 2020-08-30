@@ -1,0 +1,35 @@
+โจทย์: จงเขียนโปรแกรมรับความเร็วลมเฉลี่ยใน 10 นาที และแสดงผลระดับพายุที่เกิดขึ้น จากการจัดแบ่งความเร็วลมดังนี้
+
+		Speed (km/h)		ระดับพายุ
+			0-51.99			Breeze
+			52.00-55.99		Depression
+			56.00-101.99	        	Tropical Storm
+			102.00-208.99	        	Typhoon
+			>= 209			Super Typhoon
+
+โดยแสดงผลตามตัวอย่างการแสดงผล
+
+Testcase student: #1/5 
+ *** Wind classification ***
+Enter wind speed (km/h) : 50
+Wind classification is Breeze.
+
+Testcase student: #2/5 
+ *** Wind classification ***
+Enter wind speed (km/h) : 56.2
+Wind classification is Tropical Storm.
+
+Testcase student: #3/5
+ *** Wind classification ***
+Enter wind speed (km/h) : 99.89
+Wind classification is Tropical Storm.
+
+Testcase student: #4/5
+ *** Wind classification ***
+Enter wind speed (km/h) : 212
+Wind classification is Super Typhoon.
+
+Testcase student: #5/5 
+ *** Wind classification ***
+Enter wind speed (km/h) : 254.23
+Wind classification is Super Typhoon.

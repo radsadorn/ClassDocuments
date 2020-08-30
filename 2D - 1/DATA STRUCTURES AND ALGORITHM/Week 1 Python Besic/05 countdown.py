@@ -15,6 +15,18 @@ for i in range(-1, -len(x) - 1, -1):
         elif x[i] != 1:
             check = False
 
+ans = [n_countdown]
+lst, data = [], []
+for i in range(-1, -len(new_list) - 1, -1):
+    if new_lst[i] == 1:
+        if len(lst)!= 0:
+            data.append(lst)
+        lst = [i]
+    else :
+        lst.insert(0, i)
+
+ans.append(data)
+'''
 print(f'[{n_countdown}, [', end = '')
 for i in range(-1, -len(new_list) - 1, -1):
     if new_list[i + 1] == 1:
@@ -29,3 +41,4 @@ for i in range(-1, -len(new_list) - 1, -1):
         print(", ", end = '')
     
 print("]]")
+'''
