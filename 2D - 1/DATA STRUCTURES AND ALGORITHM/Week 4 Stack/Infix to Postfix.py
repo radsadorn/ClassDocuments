@@ -36,7 +36,7 @@ if __name__ == '__main__':
     for i in inp:
         if i in '+-*/^(':
             if not stacks.is_empty() and operator.get(i, -2) <= operator.get(stacks.peek(), -2):
-                while not stacks.is_empty() and stacks.peek() != '(':
+                while not stacks.is_empty() and stacks.peek() != '(' and operator[i] <= operator[stacks.peek()]:
                     print(stacks.pop(), end = '')
             stacks.push(i)
         elif i == ')':
