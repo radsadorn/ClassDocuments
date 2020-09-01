@@ -9,7 +9,7 @@
 * Introduction to Computer Engineering
 * Programming Fundamental
 
-### Semester 1
+### Semester 2
 * Object Oriented Programming
 
 
