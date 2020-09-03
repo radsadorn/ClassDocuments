@@ -3,18 +3,18 @@
 สำหรับจัดเก็บ Source code ที่ใช้ในการเรียนวิศวกรรมคอมพิวเตอร์ KMITL 💻☀️
 
 
-## ✔️ 1D | Semester 1
+## ✔️ 1D - 2562
 
-### Semester 1 - 1
+### Semester 1
 * Introduction to Computer Engineering
 * Programming Fundamental
 
-### Semester 1 - 2
+### Semester 2
 * Object Oriented Programming
 
 
-## ✔️ 2D | Semester 2
+## ✔️ 2D - 2563
 
-### Semester 2 - 1
+### Semester 1
 * Data Communications
 * Data Structures and Algolithm
