@@ -7,16 +7,15 @@ class Queue:
         return ', '.join(str(data) for data in self.queue) if self.size() != 0 else 'Empty'
 
     def push(self, data):
-        if self.size() == 0:
-            self.queue.append(data)
-        else:
-            for i, val in enumerate(self.queue):
-                if data[0] < val[i]:
-                    self.queue.insert(i, data)
+        for val in self.queue[-1::-1]:
+            if data[0] == val[0]:
+                if self.queue.index(val) == self.size() - 1:
                     break
-                elif i == self.size() - 1:
-                    self.queue.append(data)
-                    break
+                self.queue.insert(self.queue.index(val) + 1, data)
+                #print(data, " : ", val, " => ", self)
+                return
+        self.queue.append(data)
+        #print(data , " append ", self)
 
     def pop(self):
         return self.queue.pop(0) if self.size() != 0 else 'Empty'
