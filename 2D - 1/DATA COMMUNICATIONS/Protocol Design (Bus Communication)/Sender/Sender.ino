@@ -1,46 +1,54 @@
 #include <SoftwareSerial.h>
-SoftwareSerial qiral(10, 11);
+SoftwareSerial mySerial(10, 11);
 char myID, reciver;
 String text_data;
 int count_frame = 0;
+
 void setup() {
   Serial.begin(115200);
-  qiral.begin(57600);
+  mySerial.begin(57600);
   delay(500);
+  
   Serial.println("Enter ID : ");
   Serial.print("My ID is : ");
   while (!Serial.available());
   myID = char(Serial.read());
   Serial.println(myID);
-  delay(50);
-  while (Serial.available())
-    uint8_t temp = Serial.read();
+  flushSerial();
+    
   Serial.print("\nReciver is : ");
   while (!Serial.available());
   reciver = char(Serial.read());
   Serial.println(reciver);
+  flushSerial();
+  
+  readText();
+}
+
+void flushRx() {
+  while (mySerial.available())
+    uint8_t temp = mySerial.read();
+}
+
+void flushSerial() {
   delay(50);
   while (Serial.available())
     uint8_t temp = Serial.read();
+}
 
-  
+void readText() {
   Serial.print("\nSend Text : ");
   while (!Serial.available());
   text_data = Serial.readStringUntil('\n');
   Serial.println(text_data);
 }
 
-void flushRx() {
-  while (qiral.available())
-    uint8_t temp = qiral.read();
-}
-
 void receive()
 {
   //can't handle buffer overflowing
   //find way to reset ackNo
-  while (qiral.available()) {
-    String incomingText = qiral.readString();
+  while (mySerial.available()) {
+    String incomingText = mySerial.readString();
     Serial.print("Receiving incoming frame : ");
     Serial.println(incomingText);
     char receiver = incomingText[1], sender = incomingText[2], frame_number = incomingText[3], check = incomingText[8];//extract data
@@ -107,7 +115,7 @@ void receive()
         //send ack
         for (int i = 0; i < responseAck.length(); i++)
         {
-          qiral.write(responseAck[i]);
+          mySerial.write(responseAck[i]);
         }
         ackNo == '0' ? ackNo = '1' : ackNo = '0';
         responseAck += "`";
@@ -182,7 +190,7 @@ void loop() {
     Serial.println(data);
     Serial.println();
     long current = millis();
-    while(!qiral.available()){
+    while(!mySerial.available()){
       if (millis() - current >= 3000){
          Serial.println("Timeout");
          Serial.print("Retransmit frame ");
@@ -191,7 +199,7 @@ void loop() {
          Serial.println(count_frame);
          Serial.print("Data       : ");
          for(int i = 0; i<toSend.length(); i++){
-          qiral.write(toSend[i]);
+          mySerial.write(toSend[i]);
           flushRx();
          }
         Serial.println(data);
@@ -199,7 +207,7 @@ void loop() {
         current = millis();
       }
     }
-    String receiveText = qiral.readStringUntil('\n');
+    String receiveText = mySerial.readStringUntil('\n');
     Serial.println("Receive frame");
     Serial.print("Header    : ");
     Serial.println(receiveText.substring(1,3));
@@ -211,9 +219,6 @@ void loop() {
     Serial.println("Received\n");
     text_data = text_data.substring(4);
   }else{
-    Serial.print("\nSend Text : ");
-    while (!Serial.available());
-    text_data = Serial.readStringUntil('\n');
-    Serial.println(text_data);
+    readText();
   }
 }
