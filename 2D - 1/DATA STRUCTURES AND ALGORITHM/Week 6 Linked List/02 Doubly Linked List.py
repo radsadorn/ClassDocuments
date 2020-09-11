@@ -42,9 +42,7 @@ class LinkedList:
         while(cur.next != None):
             cur = cur.next
         node = Node(item)
-        node.previous = cur
-        cur.next = node
-        self.tail = node
+        node.previous, cur.next, self.tail  = cur, node, node
         #print(self)
 
     def add_before(self, item):
@@ -55,13 +53,9 @@ class LinkedList:
 
         node = Node(item)
         if self.size() == 1:
-            node.next = self.tail
-            self.tail.previous = node
-            self.head = node
+            node.next, self.tail.previous, self.head  = self.tail, node, node
         else:
-            node.next = self.head
-            self.head.previous = node
-            self.head = node
+            node.next, self.head.previous, self.head = self.head, node, node
         self._size += 1
     
     def insert(self, pos, item):
@@ -72,24 +66,20 @@ class LinkedList:
             self.head = self.tail = Node(item)
             self._size += 1
             return print(f'index = {pos} and data = {item}')
+
         if pos == 0:
             node = Node(item)
-            node.next = self.head
-            self.head.previous = node
-            self.head = node
+            node.next, self.head.previous, self.head = self.head, node, node
             self._size += 1
             return print(f'index = {pos} and data = {item}')
 
         if pos == self.size():
             node = Node(item)
-            node.previous = self.tail
-            self.tail.next = node
-            self.tail = node
+            node.previous, self.tail.next, self.tail = self.tail, node, node
             self._size += 1
             return print(f'index = {pos} and data = {item}')
 
-        index = 0
-        cur = self.head
+        cur, index = 0, self.head
         while index != pos-1:
             index += 1
             cur = cur.next

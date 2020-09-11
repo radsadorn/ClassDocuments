@@ -8,110 +8,107 @@ class Node:
 class LinkedList:
 
     def __init__(self):
-        self.head = self.tail = Node('')
-        self._size = 0
-        self.cursor = 0
+        self.head = self.tail = Node('|')
+        self._size = 1
 
     def __str__(self):
         if self.isEmpty():
             return ""
-        cur, s, index = self.head, '', 0
+        cur, s = self.head, str(self.head.data) 
         while cur.next != None:
-            s += str(cur.data) + ' '
+            s += " " + str(cur.next.data)
             cur = cur.next
-            print(index, s)
-            index += 1
-        s += str(cur.data) + ' '
-
-        # if index == self.cursor:
-        #         s += '| '
-        print(self.cursor)
         return s
 
     def insert(self, data):
-        print(data)
-        if self.size() == 0:
-            self.head = Node(data)
-            self.head.next = self.tail
-            self.tail.previous = self.head
-            self._size += 1
-            self.cursor = 1
-            return
-
         node = Node(data)
         self._size += 1
 
-        # if self.tail.data == '|':
-        #     self.cursor += 1
-        #     node.previous = self.tail.previous
-        #     node.next = self.tail
-        #     self.tail.previous.next = node
-        #     self.tail.previous.next, self.tail.previous = node, node
-        #     return 
-        self.cursor += 1
-        print(self.cursor)
-        node.previous = self.tail
-        self.tail.next, self.tail = node, node
-
-    def left(self):   
-        if self.cursor >= 0:
-            self.cursor -= 1   
-        print(self.cursor)
-        # if self.head.data == '|':
-        #     return 
-
-        # cur = self.head
-        # while cur.next.data != '|':
-        #     cur = cur.next
-
-        # node = cur.next
-        # cur.previous.next = node
-        # cur.next = node.next
-        # node.next = cur
-        # cur.previous = node
-
-        # if cur.next == None:
-        #     self.tail = cur
-        # if node.previous == None:
-        #     self.head = node
-
-    def right(self):
-        if self.cursor < self.size() + 1:
-            self.cursor += 1
-        print(self.cursor)
-        # if self.tail.data == '|':
-        #     return 
-        
-        # cur = self.head
-        # while cur.data != '|':
-        #     cur = cur.next
-
-        # if cur.next == None:
-        #     return
-
-        # node = cur.next
-        # cur.previous.next = node
-        # cur.next = node.next
-        # node.next = cur
-        # cur.previous = node
-
-        # if cur.next == None:
-        #     self.tail = cur
-        # if node.previous == None:
-        #     self.head = node
-    def delete(self):
-        if self.cursor == self.size():
-            return 
-
-        index = 0
         cur = self.head
-        while index != self.cursor:
-            index += 1
+        while cur.data != '|':
             cur = cur.next
 
-        node = cur.previous
-        node.next = cur.next
-        cur.next.previous = node
+        node.next = cur
+        if cur.previous != None:
+            cur.previous.next = node
+        node.previous = cur.previous
+        if cur.previous == None:
+            self.head = node
+        cur.previous = node
+
+    def left(self):
+        if self.head.data == '|':
+            return
+
+        cur = self.head
+        while cur.next.data != '|':
+            cur = cur.next
+
+        node = cur.next
+        if cur.previous != None:
+            cur.previous.next = node
+        cur.next = node.next
+        node.next = cur
+        node.previous = cur.previous
+        if cur.previous != None:
+            cur.previous = node
+
+        if cur.next == None:
+             self.tail = cur
+        if node.previous == None:
+             self.head = node
+
+    def right(self):
+        if self.tail.data == '|':
+            return
+        
+        cur = self.head
+        while cur.data != '|':
+            cur = cur.next
+
+        node = cur.next
+        if cur.previous != None:
+            cur.previous.next = node
+        else:
+            self.head = node
+        cur.next = node.next
+        if node.next != None:
+            node.next.previous = cur
+        else:
+            self.tail = cur
+        node.next = cur
+        node.previous = cur.previous
+        cur.previous = node
+
+    def delete(self):
+        if self.tail.data == '|' or self.size() < 2:
+            return
+
+        cur = self.head
+        while cur.data != '|':
+            cur = cur.next
+
+        node = cur.next
+        cur.next = node.next
+        if node.next != None:
+            node.next.previous = cur
+        else:
+            self.tail = cur
+    
+    def backspace(self):
+        if self.head.data == '|':
+            return
+        
+        cur = self.head
+        while cur.next.data != '|':
+            cur = cur.next
+
+        node = cur.next
+        node.previous = cur.previous
+        if cur.previous != None:
+            node.previous.next = node
+        else:
+            self.head = node
 
     def isEmpty(self):
         return self.size() == 0
@@ -131,17 +128,9 @@ if __name__ == '__main__':
             L.left()
         elif data[0] == 'R':
             L.right()
-        # elif data[0] == 'B':
-        #     L.backspace()
-        # else:
-        #     L.delete()
+        elif data[0] == 'D':
+            L.delete()
+        elif data[0] == 'B':
+            L.backspace()
 
     print(L)
-
-
-        
-        
-
-
-        
-    
