@@ -1,6 +1,6 @@
 class Node:
-    def __init__(self, value):
-        self.value = value
+    def __init__(self, data):
+        self.data = data
         self.next = None
 
 class LinkedList:
@@ -9,24 +9,43 @@ class LinkedList:
         self._size = 0
 
     def __str__(self):
-        cur, s = self.head, str(self.head.value)
+        cur, s = self.head, str(self.head.data)
         while cur.next != None:
-            s += " -> " + str(cur.next.value)
+            s += " -> " + str(cur.next.data)
             cur = cur.next
         return s
 
-    def isEmpty(self):
+    def is_empty(self):
         return self.head == None
 
     def append(self, item):
         self._size += 1
-        if self.isEmpty():
+        if self.is_empty():
             self.head = Node(item)
             return
+
+        cur, node = self.head, Node(item)
+        if item < cur.data:
+            node.next = cur
+            self.head = node
+            return
+            
+        while(cur.next != None):
+            if item < cur.next.data:
+                node.next = cur.next
+                cur.next = node
+                return
+            cur = cur.next
+        cur.next = node
+
+    def remove(self):
+        self._size -= 1
         node = self.head
-        while(node.next != None):
-            node = node.next
-        node.next = Node(item)
+        self.head = self.head.next
+        return node.data
+
+    def size(self):
+        return self._size
 
 class Queue:
 
@@ -41,9 +60,6 @@ class Queue:
 
     def enQueue(self, data):
         self.queue.append(data)
-
-    def enQueue_front(self, data):
-        self.queue.insert(0, data)
 
     def deQueue(self):
         return self.queue.pop(0) if self.size() != 0 else 'Empty'
@@ -74,10 +90,8 @@ def get_max_bits(n):
 
 def radix_sort(L):
     q = Queue(L)
-    print(max(L))
     max_bits = get_max_bits(max(L))
-    print(max_bits)
-    qq = list(Queue() for i in range(10))
+    qq = list(LinkedList() for i in range(10))
     # print(q)
     for i in range (1, max_bits + 2):
         print('------------------------------------------------------------')
@@ -85,33 +99,29 @@ def radix_sort(L):
         while not q.is_empty():
             num = q.deQueue()
             num_digit = get_digit(num, i)
-            if num < 0:
-                qq[num_digit].enQueue_front(num)
-            else:
-                qq[num_digit].enQueue(num)
-        for i in range(10):
-            print(i, ':', end = ' ')
-            while not qq[i].is_empty():
-                enq = qq[i].deQueue()
+            qq[num_digit].append(num)
+
+        check = qq[0].size()
+
+        for a in range(10):
+            print(a, ':', end = ' ')
+            while not qq[a].is_empty():
+                enq = qq[a].remove()
                 print(enq, end = ' ')
                 q.enQueue(enq)
             print()
+        if check == q.size():
+            return i - 1, q
+
     return max_bits, q
     
 if __name__ == '__main__':
     inp = [int(a) for a in input('Enter Input : ').split()]
 
-    times, radix = radix_sort(inp)
+    times, radix = radix_sort(inp.copy())
     print('------------------------------------------------------------')
     print(times, 'Time(s)')
 
-    before = LinkedList()
-    for data in inp:
-        before.append(data)
-    after = LinkedList()
-    for data in radix.item():
-        after.append(data)
-
-    print('Before Radix Sort :', before)
-    print('After  Radix Sort :', after)
+    print('Before Radix Sort :', ' -> '.join(str(a) for a in inp))
+    print('After  Radix Sort :', ' -> '.join(str(a) for a in radix.item()))
 
