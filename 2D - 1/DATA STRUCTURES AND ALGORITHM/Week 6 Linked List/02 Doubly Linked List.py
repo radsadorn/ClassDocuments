@@ -104,11 +104,6 @@ class LinkedList:
             return print(f'removed : {item} from index : 0')
 
         self._size -= 1
-        if item == self.tail.value:
-            self.tail = self.tail.previous
-            self.tail.next = None
-            return print(f'removed : {item} from index : {self.size()}')
-
         if item == self.head.value:
             self.head = self.head.next
             self.head.previous = None
@@ -121,6 +116,10 @@ class LinkedList:
                 return print(f'removed : {item} from index : {index}')
             index += 1
             cur = cur.next
+        if cur.value == item:
+            self.tail = self.tail.previous
+            self.tail.next = None
+            return print(f'removed : {item} from index : {index}')
         self._size += 1
         return print("Not Found!")
 
