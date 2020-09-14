@@ -66,13 +66,14 @@ class LinkedList:
             self._size += 1
             return print(f'index = {pos} and data = {item}')
 
-        self._size += 1
         node = Node(item)
         if pos == 0:
+            self._size += 1
             node.next, self.head.previous, self.head = self.head, node, node
             return print(f'index = {pos} and data = {item}')
 
         if pos == self.size():
+            self._size += 1
             node.previous, self.tail.next, self.tail = self.tail, node, node
             return print(f'index = {pos} and data = {item}')
 
@@ -85,6 +86,7 @@ class LinkedList:
         node.next = cur.next
         node.previous = cur
         cur.next = node
+        self._size += 1
 
         return print(f'index = {pos} and data = {item}')
 
@@ -119,6 +121,7 @@ class LinkedList:
                 return print(f'removed : {item} from index : {index}')
             index += 1
             cur = cur.next
+        self._size += 1
         return print("Not Found!")
 
 if __name__ == '__main__':
