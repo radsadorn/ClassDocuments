@@ -5,16 +5,16 @@
 
 ## ✔️ 1D - 2562
 
-### Semester 1
+### 📂 Semester 1
 * Introduction to Computer Engineering
 * Programming Fundamental
 
-### Semester 2
+### 📂 Semester 2
 * Object Oriented Programming
 
 
 ## ✔️ 2D - 2563
 
-### Semester 1
+### 📂 Semester 1
 * Data Communications
 * Data Structures and Algolithm
