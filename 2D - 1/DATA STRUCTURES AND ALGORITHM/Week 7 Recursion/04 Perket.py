@@ -10,8 +10,6 @@ def perket(lst, index, n):
 
     return s, b
 
-    
-
 if __name__ == "__main__":
     inp = input('Enter Input : ').split(',')
     result = None
