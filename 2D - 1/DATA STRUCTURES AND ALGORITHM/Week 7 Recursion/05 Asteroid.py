@@ -3,7 +3,7 @@ def asteroid_collision(asts):
         return asts
 
     temp = asteroid_collision(asts[1:])
-
+    
     if len(temp) != 0 and asts[0] > 0 and temp[0] < 0:
         if asts[0] > abs(temp[0]):
             return asteroid_collision([asts[0]] + temp[1:])
