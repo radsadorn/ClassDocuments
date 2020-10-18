@@ -1,0 +1,21 @@
+
+
+NET "a" LOC = P41;
+NET "b" LOC = P40;
+NET "c" LOC = P35;
+NET "Input" LOC = P45  ;
+
+
+NET "d" LOC = P34;
+NET "e" LOC = P32;
+NET "f" LOC = P29;
+NET "g" LOC = P27;
+NET "BIT_A" LOC = P81;
+NET "BIT_B" LOC = P80;
+NET "BIT_C" LOC = P79;
+
+# PlanAhead Generated physical constraints 
+
+NET "common1" LOC = P43;
+NET "common2" LOC = P33;
+NET "common3" LOC = P30;

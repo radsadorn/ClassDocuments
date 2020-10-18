@@ -1,0 +1,8 @@
+
+
+NET "H" LOC = P55;
+NET "S" LOC = P56;
+NET "B" LOC = P57;
+NET "D" LOC = P58;
+NET "E" LOC = P59;
+NET "Buzzer" LOC = P83;

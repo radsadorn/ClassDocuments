@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym SEG_G C:/Users/HCARACH/Documents/2D/Digital/RANDOM/SEG_G.sch C:/Users/HCARACH/Documents/2D/Digital/RANDOM/SEG_G.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SEG_G C:/Users/HCARACH/Documents/2D/Digital/RANDOM/SEG_G.sch C:/Users/HCARACH/Documents/2D/Digital/RANDOM/SEG_G.sym 
