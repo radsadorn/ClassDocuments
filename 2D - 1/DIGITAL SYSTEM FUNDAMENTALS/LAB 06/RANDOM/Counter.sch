@@ -17,8 +17,6 @@
         <signal name="B1" />
         <signal name="B2" />
         <signal name="B3" />
-        <signal name="XLXN_16" />
-        <signal name="XLXN_17" />
         <signal name="XLXN_18" />
         <port polarity="Input" name="C" />
         <port polarity="Input" name="CLR" />
@@ -68,12 +66,12 @@
             <blockpin signalname="XLXN_18" name="C" />
             <blockpin signalname="XLXN_4" name="CE" />
             <blockpin signalname="CLR" name="CLR" />
-            <blockpin signalname="XLXN_16" name="CEO" />
+            <blockpin name="CEO" />
             <blockpin signalname="B0" name="Q0" />
             <blockpin signalname="B1" name="Q1" />
             <blockpin signalname="B2" name="Q2" />
             <blockpin signalname="B3" name="Q3" />
-            <blockpin signalname="XLXN_17" name="TC" />
+            <blockpin name="TC" />
         </block>
         <block symbolname="vcc" name="XLXI_3">
             <blockpin signalname="XLXN_4" name="P" />
@@ -129,12 +127,6 @@
             <wire x2="1744" y1="1296" y2="1296" x1="1712" />
         </branch>
         <iomarker fontsize="28" x="1744" y="1296" name="B3" orien="R0" />
-        <branch name="XLXN_16">
-            <wire x2="1744" y1="1360" y2="1360" x1="1712" />
-        </branch>
-        <branch name="XLXN_17">
-            <wire x2="1744" y1="1424" y2="1424" x1="1712" />
-        </branch>
         <branch name="XLXN_18">
             <wire x2="1232" y1="864" y2="864" x1="1200" />
             <wire x2="1232" y1="864" y2="1424" x1="1232" />

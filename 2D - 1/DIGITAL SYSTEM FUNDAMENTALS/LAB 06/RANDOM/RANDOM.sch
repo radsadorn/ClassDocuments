@@ -24,9 +24,6 @@
         <signal name="common2" />
         <signal name="common3" />
         <signal name="XLXN_101" />
-        <signal name="XLXN_6" />
-        <signal name="XLXN_5" />
-        <signal name="XLXN_4" />
         <signal name="XLXN_3" />
         <signal name="a" />
         <signal name="b" />
@@ -35,7 +32,6 @@
         <signal name="e" />
         <signal name="f" />
         <signal name="g" />
-        <signal name="XLXN_116" />
         <signal name="XLXN_120" />
         <signal name="XLXN_121" />
         <signal name="XLXN_122" />
@@ -122,12 +118,6 @@
             <line x2="0" y1="-480" y2="-480" x1="64" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
         </blockdef>
-        <blockdef name="divide2_16">
-            <timestamp>2020-10-17T16:30:5</timestamp>
-            <rect width="256" x="64" y="-64" height="64" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-        </blockdef>
         <blockdef name="Multiplexer">
             <timestamp>2020-10-17T15:8:22</timestamp>
             <rect width="256" x="64" y="-576" height="576" />
@@ -144,6 +134,12 @@
             <line x2="384" y1="-480" y2="-480" x1="320" />
             <line x2="384" y1="-416" y2="-416" x1="320" />
             <line x2="384" y1="-352" y2="-352" x1="320" />
+        </blockdef>
+        <blockdef name="divide2_16">
+            <timestamp>2020-10-22T3:29:47</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <block symbolname="inv" name="XLXI_10">
             <blockpin signalname="common0" name="I" />
@@ -220,7 +216,7 @@
             <blockpin signalname="g" name="g" />
             <blockpin signalname="b" name="b" />
         </block>
-        <block symbolname="divide2_16" name="XLXI_34">
+        <block symbolname="divide2_16" name="XLXI_38">
             <blockpin signalname="OSC" name="CLK_IN" />
             <blockpin signalname="common0" name="CLK_OUT" />
         </block>
@@ -394,7 +390,7 @@
             <wire x2="1024" y1="704" y2="704" x1="656" />
         </branch>
         <iomarker fontsize="28" x="656" y="704" name="CLR" orien="R180" />
-        <instance x="288" y="1008" name="XLXI_34" orien="R0">
+        <instance x="288" y="1008" name="XLXI_38" orien="R0">
         </instance>
     </sheet>
 </drawing>
