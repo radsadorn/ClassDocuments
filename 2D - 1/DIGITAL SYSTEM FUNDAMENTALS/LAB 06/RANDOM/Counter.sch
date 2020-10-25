@@ -8,7 +8,6 @@
     <netlist>
         <signal name="XLXN_4" />
         <signal name="C" />
-        <signal name="CLR" />
         <signal name="A0" />
         <signal name="A1" />
         <signal name="A2" />
@@ -19,7 +18,6 @@
         <signal name="B3" />
         <signal name="XLXN_18" />
         <port polarity="Input" name="C" />
-        <port polarity="Input" name="CLR" />
         <port polarity="Output" name="A0" />
         <port polarity="Output" name="A1" />
         <port polarity="Output" name="A2" />
@@ -54,7 +52,7 @@
         <block symbolname="cd4ce" name="XLXI_1">
             <blockpin signalname="C" name="C" />
             <blockpin signalname="XLXN_4" name="CE" />
-            <blockpin signalname="CLR" name="CLR" />
+            <blockpin name="CLR" />
             <blockpin signalname="XLXN_18" name="CEO" />
             <blockpin signalname="A0" name="Q0" />
             <blockpin signalname="A1" name="Q1" />
@@ -65,7 +63,7 @@
         <block symbolname="cd4ce" name="XLXI_2">
             <blockpin signalname="XLXN_18" name="C" />
             <blockpin signalname="XLXN_4" name="CE" />
-            <blockpin signalname="CLR" name="CLR" />
+            <blockpin name="CLR" />
             <blockpin name="CEO" />
             <blockpin signalname="B0" name="Q0" />
             <blockpin signalname="B1" name="Q1" />
@@ -87,11 +85,6 @@
         </branch>
         <branch name="C">
             <wire x2="816" y1="928" y2="928" x1="560" />
-        </branch>
-        <branch name="CLR">
-            <wire x2="816" y1="1520" y2="1520" x1="768" />
-            <wire x2="1328" y1="1520" y2="1520" x1="816" />
-            <wire x2="816" y1="1024" y2="1520" x1="816" />
         </branch>
         <instance x="560" y="864" name="XLXI_3" orien="R0" />
         <iomarker fontsize="28" x="560" y="928" name="C" orien="R180" />
@@ -132,6 +125,5 @@
             <wire x2="1232" y1="864" y2="1424" x1="1232" />
             <wire x2="1328" y1="1424" y2="1424" x1="1232" />
         </branch>
-        <iomarker fontsize="28" x="768" y="1520" name="CLR" orien="R180" />
     </sheet>
 </drawing>

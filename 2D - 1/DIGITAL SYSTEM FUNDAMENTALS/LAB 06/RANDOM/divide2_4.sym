@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="divide2_4">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2020-10-17T16:29:1</timestamp>
+    <timestamp>2020-10-24T7:45:20</timestamp>
     <pin polarity="Input" x="0" y="-32" name="CLK_IN" />
     <pin polarity="Output" x="384" y="-32" name="CLK_OUT" />
     <graph>

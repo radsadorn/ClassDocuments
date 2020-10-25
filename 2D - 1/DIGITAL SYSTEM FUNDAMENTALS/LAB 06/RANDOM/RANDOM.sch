@@ -35,7 +35,6 @@
         <signal name="XLXN_120" />
         <signal name="XLXN_121" />
         <signal name="XLXN_122" />
-        <signal name="CLR" />
         <port polarity="Output" name="common1" />
         <port polarity="Output" name="Buzzer" />
         <port polarity="Output" name="common0" />
@@ -50,7 +49,6 @@
         <port polarity="Output" name="e" />
         <port polarity="Output" name="f" />
         <port polarity="Output" name="g" />
-        <port polarity="Input" name="CLR" />
         <blockdef name="BCD2SEG">
             <timestamp>2020-10-17T16:36:24</timestamp>
             <rect width="256" x="64" y="-448" height="448" />
@@ -105,7 +103,7 @@
             <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
         <blockdef name="Counter">
-            <timestamp>2020-10-17T15:57:50</timestamp>
+            <timestamp>2020-10-24T7:48:24</timestamp>
             <rect width="256" x="64" y="-512" height="512" />
             <line x2="384" y1="-480" y2="-480" x1="320" />
             <line x2="384" y1="-416" y2="-416" x1="320" />
@@ -116,7 +114,6 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
             <line x2="0" y1="-480" y2="-480" x1="64" />
-            <line x2="0" y1="-416" y2="-416" x1="64" />
         </blockdef>
         <blockdef name="Multiplexer">
             <timestamp>2020-10-17T15:8:22</timestamp>
@@ -136,7 +133,7 @@
             <line x2="384" y1="-352" y2="-352" x1="320" />
         </blockdef>
         <blockdef name="divide2_16">
-            <timestamp>2020-10-22T3:29:47</timestamp>
+            <timestamp>2020-10-24T8:0:21</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
@@ -167,7 +164,6 @@
         </block>
         <block symbolname="Counter" name="XLXI_27">
             <blockpin signalname="XLXN_101" name="C" />
-            <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="XLXN_20" name="A0" />
             <blockpin signalname="XLXN_24" name="A1" />
             <blockpin signalname="XLXN_25" name="A2" />
@@ -386,10 +382,6 @@
         <branch name="XLXN_122">
             <wire x2="2752" y1="832" y2="832" x1="2528" />
         </branch>
-        <branch name="CLR">
-            <wire x2="1024" y1="704" y2="704" x1="656" />
-        </branch>
-        <iomarker fontsize="28" x="656" y="704" name="CLR" orien="R180" />
         <instance x="288" y="1008" name="XLXI_38" orien="R0">
         </instance>
     </sheet>
