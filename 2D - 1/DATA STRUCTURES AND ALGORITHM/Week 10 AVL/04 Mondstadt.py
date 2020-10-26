@@ -11,29 +11,11 @@ class Node:
 class Tree:
 
     def __init__(self):
-        self.heap = None
         self.root = None
 
-    def insert(self, data):
-        if self.root is None:
-            self.root = Node(data)
-            return self.root
-        node = self.root
-        while True:
-            if data < node.data:
-                if node.left == None:
-                    node.left = Node(data)
-                    return self.root
-                node = node.left
-            else:
-                if node.right == None:
-                    node.right = Node(data)
-                    return self.root
-                node = node.right
-
-    def insert_heap(self, node, name, pos):
-        if not self.heap:
-            self.heap = Node(name, pos)
+    def insert(self, node, name, pos):
+        if not self.root:
+            self.root = Node(name, pos)
             return
         
         if pos == node.pos * 2 + 1:
@@ -44,24 +26,36 @@ class Tree:
             return node
 
         if node.left:
-            node.left = self.insert_heap(node.left, name, pos)
+            node.left = self.insert(node.left, name, pos)
         if node.right:
-            node.right = self.insert_heap(node.right, name, pos)
+            node.right = self.insert(node.right, name, pos)
 
         return node
+
+    def sum(self, node):
+        if not node:
+            return 0
+
+        sum = self.sum(node.left)
+        sum += self.sum(node.right) + int(node.data)
+
+        return sum
     
     def find_sum(self, node):
         if not node:
             return 0
 
-        sum = self.find_sum(node.left)
-        sum += self.find_sum(node.right) + int(node.data)
+        sum = 0
+        if node.left:
+            sum += node.left.data
+        if node.right:
+            sum += node.right.data
 
         return sum
 
     def pow_at(self, node, pos):
         if not node:
-            return None
+            return 0
         if pos == node.pos:
             return self.find_sum(node)
 
@@ -72,15 +66,6 @@ class Tree:
         data = self.pow_at(node.right, pos)
     
         return data
-
-    def in_order(self, node):
-        if node == None:
-            return []
-
-        s = self.in_order(node.right)\
-             + [node.data]\
-                 + self.in_order(node.left)
-        return s
 
     def printTree(self, node, level = 0):
         if node != None:
@@ -93,20 +78,16 @@ if __name__ == '__main__':
 
     heap = Tree()
 
-    for data in inp[0].split():
-        heap.insert(int(data))
-
-    data = heap.in_order(heap.root)
+    data = list(map(int, inp[0].split()))
 
     for pos, name in enumerate(data):
-        heap.insert_heap(heap.heap, name, pos)
+        heap.insert(heap.root, name, pos)
 
-    heap.printTree(heap.heap)
-    print(heap.find_sum(heap.heap))
+    print(heap.sum(heap.root))
     for data in inp[1].split(','):
         data = data.split()
 
-        a, b = heap.pow_at(heap.heap, int(data[0])), heap.pow_at(heap.heap, int(data[1]))
+        a, b = heap.pow_at(heap.root, int(data[0])), heap.pow_at(heap.root, int(data[1]))
         
         oper = '='
         if a > b:
