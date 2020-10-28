@@ -13,7 +13,6 @@
         <signal name="CLK_DISPLAY" />
         <signal name="OSC" />
         <signal name="CLR_OUT" />
-        <signal name="XLXN_10" />
         <port polarity="Input" name="CLR" />
         <port polarity="Input" name="SW" />
         <port polarity="Output" name="CLK_TIMER" />
@@ -21,7 +20,7 @@
         <port polarity="Input" name="OSC" />
         <port polarity="Output" name="CLR_OUT" />
         <blockdef name="State">
-            <timestamp>2020-10-28T7:14:13</timestamp>
+            <timestamp>2020-10-28T8:51:41</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-32" y2="-32" x1="320" />

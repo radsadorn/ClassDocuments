@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="State">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2020-10-28T7:14:11</timestamp>
+    <timestamp>2020-10-28T8:51:39</timestamp>
     <pin polarity="Input" x="0" y="-32" name="CLK" />
     <pin polarity="Output" x="384" y="-32" name="STATE" />
     <graph>

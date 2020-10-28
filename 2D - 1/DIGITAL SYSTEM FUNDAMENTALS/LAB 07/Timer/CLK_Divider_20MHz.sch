@@ -115,8 +115,9 @@
         </instance>
         <iomarker fontsize="28" x="720" y="960" name="CLR" orien="R180" />
         <branch name="CLR">
-            <wire x2="768" y1="960" y2="960" x1="720" />
-            <wire x2="1328" y1="960" y2="960" x1="768" />
+            <wire x2="720" y1="960" y2="1040" x1="720" />
+            <wire x2="1328" y1="1040" y2="1040" x1="720" />
+            <wire x2="1328" y1="960" y2="1040" x1="1328" />
         </branch>
         <instance x="800" y="1456" name="XLXI_15" orien="R0" />
         <branch name="XLXN_2">

@@ -23,7 +23,7 @@
         <signal name="XLXN_15" />
         <signal name="XLXN_16" />
         <signal name="CLR">
-            <attr value="P55" name="LOC">
+            <attr value="P47" name="LOC">
                 <trait verilog="all:0 wsynth:1" />
                 <trait vhdl="all:0 wa:1 wd:1" />
             </attr>
