@@ -22,29 +22,88 @@
         <signal name="XLXN_14" />
         <signal name="XLXN_15" />
         <signal name="XLXN_16" />
-        <signal name="CLR" />
+        <signal name="CLR">
+            <attr value="P55" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
         <signal name="SW">
             <attr value="TRUE" name="CLOCK_DEDICATED_ROUTE">
                 <trait verilog="all:0 wsynth:1" />
                 <trait vhdl="all:0 wa:1 wd:1" />
             </attr>
+            <attr value="P45" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
         </signal>
-        <signal name="OSC" />
-        <signal name="a" />
-        <signal name="b" />
-        <signal name="c" />
-        <signal name="d" />
+        <signal name="OSC">
+            <attr value="P123" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
+        <signal name="a">
+            <attr value="P41" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
+        <signal name="b">
+            <attr value="P40" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
+        <signal name="c">
+            <attr value="P35" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
+        <signal name="d">
+            <attr value="P34" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
         <signal name="e">
             <attr value="P32" name="LOC">
                 <trait verilog="all:0 wsynth:1" />
                 <trait vhdl="all:0 wa:1 wd:1" />
             </attr>
         </signal>
-        <signal name="f" />
-        <signal name="g" />
-        <signal name="p" />
-        <signal name="comm_0" />
-        <signal name="comm_1" />
+        <signal name="f">
+            <attr value="P29" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
+        <signal name="g">
+            <attr value="P27" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
+        <signal name="p">
+            <attr value="P26" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
+        <signal name="comm_0">
+            <attr value="P44" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
+        <signal name="comm_1">
+            <attr value="P43" name="LOC">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
         <signal name="comm_2">
             <attr value="P33" name="LOC">
                 <trait verilog="all:0 wsynth:1" />
@@ -59,7 +118,6 @@
         </signal>
         <signal name="XLXN_86" />
         <signal name="XLXN_93" />
-        <signal name="XLXN_94" />
         <signal name="XLXN_95" />
         <port polarity="Input" name="CLR" />
         <port polarity="Input" name="SW" />
@@ -111,7 +169,7 @@
             <line x2="384" y1="-736" y2="-736" x1="320" />
         </blockdef>
         <blockdef name="Timer">
-            <timestamp>2020-10-23T17:1:29</timestamp>
+            <timestamp>2020-10-28T7:55:53</timestamp>
             <rect width="256" x="64" y="-1024" height="1024" />
             <line x2="384" y1="-992" y2="-992" x1="320" />
             <line x2="384" y1="-928" y2="-928" x1="320" />
@@ -133,15 +191,14 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="Control">
-            <timestamp>2020-10-23T18:42:0</timestamp>
-            <rect width="256" x="64" y="-256" height="256" />
+            <timestamp>2020-10-28T8:34:54</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
         </blockdef>
         <block symbolname="Timer" name="XLXI_14">
             <blockpin signalname="XLXN_1" name="A0" />
@@ -180,7 +237,7 @@
             <blockpin signalname="XLXN_11" name="C2" />
             <blockpin signalname="XLXN_12" name="C3" />
             <blockpin signalname="XLXN_95" name="CLK_DISPLAY" />
-            <blockpin signalname="XLXN_94" name="CLK_DOT" />
+            <blockpin signalname="XLXN_93" name="CLK_DOT" />
             <blockpin signalname="comm_0" name="common_0" />
             <blockpin signalname="comm_1" name="common_1" />
             <blockpin signalname="comm_2" name="common_2" />
@@ -195,9 +252,8 @@
             <blockpin signalname="f" name="f" />
             <blockpin signalname="g" name="g" />
         </block>
-        <block symbolname="Control" name="XLXI_23">
+        <block symbolname="Control" name="XLXI_25">
             <blockpin signalname="XLXN_95" name="CLK_DISPLAY" />
-            <blockpin signalname="XLXN_94" name="CLK_DOT" />
             <blockpin signalname="XLXN_93" name="CLK_TIMER" />
             <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="XLXN_86" name="CLR_OUT" />
@@ -325,20 +381,18 @@
         </instance>
         <branch name="XLXN_93">
             <wire x2="1280" y1="1744" y2="1744" x1="1056" />
+            <wire x2="1616" y1="1744" y2="1744" x1="1280" />
             <wire x2="1280" y1="576" y2="1744" x1="1280" />
             <wire x2="1504" y1="576" y2="576" x1="1280" />
-        </branch>
-        <branch name="XLXN_94">
-            <wire x2="1664" y1="1808" y2="1808" x1="1056" />
-            <wire x2="1664" y1="1600" y2="1808" x1="1664" />
-            <wire x2="2288" y1="1600" y2="1600" x1="1664" />
+            <wire x2="1616" y1="1600" y2="1744" x1="1616" />
+            <wire x2="2288" y1="1600" y2="1600" x1="1616" />
         </branch>
         <branch name="XLXN_95">
-            <wire x2="1680" y1="1872" y2="1872" x1="1056" />
-            <wire x2="1680" y1="1664" y2="1872" x1="1680" />
+            <wire x2="1680" y1="1808" y2="1808" x1="1056" />
             <wire x2="2288" y1="1664" y2="1664" x1="1680" />
+            <wire x2="1680" y1="1664" y2="1808" x1="1680" />
         </branch>
-        <instance x="672" y="1904" name="XLXI_23" orien="R0">
+        <instance x="672" y="1840" name="XLXI_25" orien="R0">
         </instance>
     </sheet>
 </drawing>

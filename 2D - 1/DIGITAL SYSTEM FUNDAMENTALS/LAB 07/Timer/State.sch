@@ -24,15 +24,6 @@
             <line x2="64" y1="-32" y2="-32" x1="0" />
             <line x2="64" y1="-128" y2="-128" x1="0" />
         </blockdef>
-        <blockdef name="gnd">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-64" y2="-96" x1="64" />
-            <line x2="52" y1="-48" y2="-48" x1="76" />
-            <line x2="60" y1="-32" y2="-32" x1="68" />
-            <line x2="40" y1="-64" y2="-64" x1="88" />
-            <line x2="64" y1="-64" y2="-80" x1="64" />
-            <line x2="64" y1="-128" y2="-96" x1="64" />
-        </blockdef>
         <blockdef name="vcc">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-64" x1="64" />
@@ -44,9 +35,6 @@
             <blockpin signalname="XLXN_11" name="CLR" />
             <blockpin signalname="XLXN_13" name="T" />
             <blockpin signalname="STATE" name="Q" />
-        </block>
-        <block symbolname="gnd" name="XLXI_7">
-            <blockpin signalname="XLXN_11" name="G" />
         </block>
         <block symbolname="vcc" name="XLXI_8">
             <blockpin signalname="XLXN_13" name="P" />
@@ -64,7 +52,6 @@
         <branch name="XLXN_11">
             <wire x2="1040" y1="1040" y2="1120" x1="1040" />
         </branch>
-        <instance x="976" y="1248" name="XLXI_7" orien="R0" />
         <iomarker fontsize="28" x="1856" y="816" name="STATE" orien="R0" />
         <branch name="XLXN_13">
             <wire x2="880" y1="800" y2="816" x1="880" />

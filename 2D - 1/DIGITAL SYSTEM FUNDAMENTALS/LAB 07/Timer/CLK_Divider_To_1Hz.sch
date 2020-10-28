@@ -9,44 +9,61 @@
         <signal name="XLXN_11" />
         <signal name="CLK_IN" />
         <signal name="CLK_OUT" />
+        <signal name="CLR" />
         <port polarity="Input" name="CLK_IN" />
         <port polarity="Output" name="CLK_OUT" />
+        <port polarity="Input" name="CLR" />
         <blockdef name="diviser_2">
-            <timestamp>2020-10-23T18:32:48</timestamp>
-            <rect width="256" x="64" y="-64" height="64" />
+            <timestamp>2020-10-28T8:2:58</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="CLK_Divider_To_2Hz">
-            <timestamp>2020-10-23T18:34:49</timestamp>
-            <rect width="256" x="64" y="-64" height="64" />
+            <timestamp>2020-10-28T8:23:4</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
-        <block symbolname="CLK_Divider_To_2Hz" name="XLXI_12">
+        <block symbolname="diviser_2" name="XLXI_25">
             <blockpin signalname="XLXN_11" name="CLK_IN" />
             <blockpin signalname="CLK_OUT" name="CLK_OUT" />
+            <blockpin signalname="CLR" name="CLR" />
         </block>
-        <block symbolname="diviser_2" name="XLXI_13">
+        <block symbolname="CLK_Divider_To_2Hz" name="XLXI_26">
             <blockpin signalname="CLK_IN" name="CLK_IN" />
             <blockpin signalname="XLXN_11" name="CLK_OUT" />
+            <blockpin signalname="CLR" name="CLR" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="1536" y="1040" name="XLXI_12" orien="R0">
-        </instance>
-        <instance x="1056" y="1040" name="XLXI_13" orien="R0">
-        </instance>
-        <branch name="XLXN_11">
-            <wire x2="1536" y1="1008" y2="1008" x1="1440" />
-        </branch>
         <branch name="CLK_IN">
-            <wire x2="1056" y1="1008" y2="1008" x1="1024" />
+            <wire x2="704" y1="992" y2="992" x1="672" />
         </branch>
-        <iomarker fontsize="28" x="1024" y="1008" name="CLK_IN" orien="R180" />
+        <iomarker fontsize="28" x="672" y="992" name="CLK_IN" orien="R180" />
         <branch name="CLK_OUT">
-            <wire x2="1952" y1="1008" y2="1008" x1="1920" />
+            <wire x2="2000" y1="992" y2="992" x1="1984" />
+            <wire x2="2192" y1="992" y2="992" x1="2000" />
         </branch>
-        <iomarker fontsize="28" x="1952" y="1008" name="CLK_OUT" orien="R0" />
+        <branch name="XLXN_11">
+            <wire x2="1600" y1="992" y2="992" x1="1088" />
+        </branch>
+        <iomarker fontsize="28" x="2192" y="992" name="CLK_OUT" orien="R0" />
+        <instance x="1600" y="1088" name="XLXI_25" orien="R0">
+        </instance>
+        <instance x="704" y="1088" name="XLXI_26" orien="R0">
+        </instance>
+        <branch name="CLR">
+            <wire x2="688" y1="1280" y2="1280" x1="640" />
+            <wire x2="704" y1="1280" y2="1280" x1="688" />
+            <wire x2="1152" y1="1280" y2="1280" x1="704" />
+            <wire x2="704" y1="1056" y2="1056" x1="688" />
+            <wire x2="688" y1="1056" y2="1280" x1="688" />
+            <wire x2="1152" y1="1056" y2="1280" x1="1152" />
+            <wire x2="1600" y1="1056" y2="1056" x1="1152" />
+        </branch>
+        <iomarker fontsize="28" x="640" y="1280" name="CLR" orien="R180" />
     </sheet>
 </drawing>

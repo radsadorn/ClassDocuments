@@ -44,7 +44,7 @@
         <port polarity="Input" name="CLR" />
         <port polarity="Input" name="CLK" />
         <blockdef name="SEC_COUNTER">
-            <timestamp>2020-10-23T16:58:17</timestamp>
+            <timestamp>2020-10-28T7:54:41</timestamp>
             <rect width="256" x="64" y="-576" height="576" />
             <line x2="384" y1="-544" y2="-544" x1="320" />
             <line x2="384" y1="-480" y2="-480" x1="320" />
@@ -59,7 +59,7 @@
             <line x2="0" y1="-480" y2="-480" x1="64" />
         </blockdef>
         <blockdef name="MIN_COUNTER">
-            <timestamp>2020-10-23T16:59:32</timestamp>
+            <timestamp>2020-10-28T7:55:34</timestamp>
             <rect width="256" x="64" y="-512" height="512" />
             <line x2="384" y1="-480" y2="-480" x1="320" />
             <line x2="384" y1="-416" y2="-416" x1="320" />

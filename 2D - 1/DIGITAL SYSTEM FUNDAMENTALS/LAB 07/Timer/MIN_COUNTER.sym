@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="MIN_COUNTER">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2020-10-23T16:59:30</timestamp>
+    <timestamp>2020-10-28T7:55:32</timestamp>
     <pin polarity="Output" x="384" y="-480" name="C0" />
     <pin polarity="Output" x="384" y="-416" name="C1" />
     <pin polarity="Output" x="384" y="-352" name="C2" />

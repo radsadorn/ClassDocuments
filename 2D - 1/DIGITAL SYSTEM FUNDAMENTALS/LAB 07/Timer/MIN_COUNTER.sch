@@ -18,8 +18,8 @@
         <signal name="XLXN_16" />
         <signal name="XLXN_17" />
         <signal name="CLK" />
-        <signal name="XLXN_20" />
-        <signal name="XLXN_21" />
+        <signal name="XLXN_22" />
+        <signal name="XLXN_23" />
         <port polarity="Output" name="C0" />
         <port polarity="Output" name="C1" />
         <port polarity="Output" name="C2" />
@@ -63,7 +63,7 @@
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
         <block symbolname="cd4ce" name="XLXI_1">
-            <blockpin signalname="XLXN_21" name="C" />
+            <blockpin signalname="XLXN_23" name="C" />
             <blockpin signalname="XLXN_16" name="CE" />
             <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="XLXN_17" name="CEO" />
@@ -74,7 +74,7 @@
             <blockpin name="TC" />
         </block>
         <block symbolname="cd4ce" name="XLXI_2">
-            <blockpin signalname="XLXN_21" name="C" />
+            <blockpin signalname="XLXN_23" name="C" />
             <blockpin signalname="XLXN_17" name="CE" />
             <blockpin signalname="CLR" name="CLR" />
             <blockpin name="CEO" />
@@ -89,7 +89,7 @@
         </block>
         <block symbolname="inv" name="XLXI_4">
             <blockpin signalname="CLK" name="I" />
-            <blockpin signalname="XLXN_21" name="O" />
+            <blockpin signalname="XLXN_23" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -139,22 +139,21 @@
         </branch>
         <iomarker fontsize="28" x="496" y="1600" name="CLR" orien="R180" />
         <branch name="CLR">
-            <wire x2="960" y1="1600" y2="1600" x1="496" />
-            <wire x2="992" y1="1600" y2="1600" x1="960" />
-            <wire x2="1056" y1="1600" y2="1600" x1="992" />
+            <wire x2="1056" y1="1600" y2="1600" x1="496" />
             <wire x2="1536" y1="1600" y2="1600" x1="1056" />
             <wire x2="1056" y1="960" y2="1600" x1="1056" />
         </branch>
-        <instance x="352" y="896" name="XLXI_4" orien="R0" />
+        <iomarker fontsize="28" x="352" y="832" name="CLK" orien="R180" />
         <branch name="CLK">
-            <wire x2="352" y1="864" y2="864" x1="320" />
+            <wire x2="352" y1="832" y2="864" x1="352" />
+            <wire x2="416" y1="864" y2="864" x1="352" />
         </branch>
-        <iomarker fontsize="28" x="320" y="864" name="CLK" orien="R180" />
-        <branch name="XLXN_21">
-            <wire x2="736" y1="864" y2="864" x1="576" />
-            <wire x2="1056" y1="864" y2="864" x1="736" />
-            <wire x2="736" y1="864" y2="1504" x1="736" />
-            <wire x2="1536" y1="1504" y2="1504" x1="736" />
+        <instance x="416" y="896" name="XLXI_4" orien="R0" />
+        <branch name="XLXN_23">
+            <wire x2="704" y1="864" y2="864" x1="640" />
+            <wire x2="1056" y1="864" y2="864" x1="704" />
+            <wire x2="704" y1="864" y2="1504" x1="704" />
+            <wire x2="1536" y1="1504" y2="1504" x1="704" />
         </branch>
     </sheet>
 </drawing>
