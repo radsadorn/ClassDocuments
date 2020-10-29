@@ -18,7 +18,6 @@
         <signal name="XLXN_16" />
         <signal name="XLXN_17" />
         <signal name="CLK" />
-        <signal name="XLXN_22" />
         <signal name="XLXN_23" />
         <port polarity="Output" name="C0" />
         <port polarity="Output" name="C1" />

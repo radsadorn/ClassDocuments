@@ -22,7 +22,6 @@
         <signal name="XLXN_31" />
         <signal name="XLXN_35" />
         <signal name="CLK" />
-        <signal name="XLXN_39" />
         <signal name="XLXN_40" />
         <port polarity="Output" name="B2" />
         <port polarity="Output" name="B3" />

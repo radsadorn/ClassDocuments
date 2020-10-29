@@ -120,6 +120,10 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="132"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="25"/>
     </file>
+    <file xil_pn:name="BCD_0_F_Decoder.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="28"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="28"/>
+    </file>
   </files>
 
   <autoManagedFiles>

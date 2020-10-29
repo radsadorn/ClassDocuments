@@ -12,8 +12,6 @@
         <signal name="XLXN_4" />
         <signal name="CLK_OUT" />
         <signal name="CLK_IN" />
-        <signal name="XLXN_12" />
-        <signal name="XLXN_14" />
         <signal name="CLR" />
         <port polarity="Output" name="CLK_OUT" />
         <port polarity="Input" name="CLK_IN" />

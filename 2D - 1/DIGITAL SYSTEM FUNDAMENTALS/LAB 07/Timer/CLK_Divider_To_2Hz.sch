@@ -10,7 +10,6 @@
         <signal name="XLXN_1" />
         <signal name="CLK_IN" />
         <signal name="CLK_OUT" />
-        <signal name="XLXN_6" />
         <signal name="CLR" />
         <port polarity="Input" name="CLK_IN" />
         <port polarity="Output" name="CLK_OUT" />
