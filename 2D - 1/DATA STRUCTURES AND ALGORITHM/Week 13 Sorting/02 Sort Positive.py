@@ -1,5 +1,4 @@
 def selection(data):
-    tmp = 0
     for last in range(len(data) - 1, -1, -1):
         if data[last] < 0:
             continue
