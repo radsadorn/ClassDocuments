@@ -50,22 +50,22 @@ void loop() {
   {
     if (check == true) {
       if ( a0min < max and max < a0max ) {
-        Serial.print("0 0 ");
+        //Serial.print("0 0 ");
         last = 0;
         count++;
       }
       else if ( a1min < max and max < a1max ) {
-        Serial.print("0 1 ");
+        //Serial.print("0 1 ");
         last = 1;
         count++;
       }
       else if ( a2min < max and max < a2max ) {
-        Serial.print("1 0 ");
+        //Serial.print("1 0 ");
         last = 2;
         count++;
       }
       else if ( a3min < max and max < a3max ) {
-        Serial.print("1 1 ");
+        //Serial.print("1 1 ");
         last = 3;
         count++;
       }
@@ -79,7 +79,7 @@ void loop() {
           data = 0;
           bitCheck = 0;
         }
-        Serial.println();
+        //Serial.println();
         count = 0;
       }
     }
