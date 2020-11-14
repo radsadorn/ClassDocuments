@@ -21,7 +21,7 @@ void setup() {
   Serial.flush();
 
   Wire.begin();
-  radio.setFrequency(107.6);
+  radio.setFrequency(87.8);
 }
 
 int prev = 0;
@@ -38,8 +38,6 @@ uint32_t baud_begin = 0;
 
 void loop() {
   int tmp = analogRead(A0);
-  if (tmp > 30)
-    Serial.println(tmp);
   
   if ( tmp > r_slope and prev < r_slope and !check_amp ) // check amplitude
   {
@@ -54,12 +52,15 @@ void loop() {
   if(tmp < r_slope and check_baud) {
     if (micros() - baud_begin > 9900 ) // full baud
     {
-      uint16_t last = (((count - 5) / 3) & 3) << (bit_check * 2);;  // shift data
+      uint16_t last = (int(ceil(float(count - 5) / 3)) & 3) << (bit_check * 2);;  // shift data
       data |= last;                                                 // add two new bits in data
       baud_check++;
+      Serial.print(count);
+      Serial.print(" ");
+      Serial.println(int(ceil(float(count - 6) / 3)));
       if (baud_check == 4) // 8 bits
       {
-        Serial.print((char)data);
+        Serial.println((char)data);
         data = 0;
         baud_check = 0;
         bit_check = -1;
