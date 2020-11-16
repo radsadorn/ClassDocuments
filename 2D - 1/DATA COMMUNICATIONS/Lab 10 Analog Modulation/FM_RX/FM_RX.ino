@@ -4,24 +4,23 @@
 TEA5767Radio radio = TEA5767Radio();
 
 #ifndef cbi
-#define cbi(sfr, bit)(_SFR_BYTE(sfr)&=~_BV(bit)) 
+#define cbi(sfr, bit)(_SFR_BYTE(sfr)&=~_BV(bit))
 #endif
 #ifndef sbi
 #define sbi(sfr, bit)(_SFR_BYTE(sfr)|=_BV(bit))
 #endif
 
 //edit this number
-#define r_slope 30
-
+#define r_slope 300
 void setup() {
   sbi(ADCSRA, ADPS2); // this for increase analogRead speed
-  cbi(ADCSRA,ADPS1);
-  cbi(ADCSRA,ADPS0);
+  cbi(ADCSRA, ADPS1);
+  cbi(ADCSRA, ADPS0);
   Serial.begin(115200);
   Serial.flush();
 
   Wire.begin();
-  radio.setFrequency(87.8);
+  radio.setFrequency(87.3);
 }
 
 int prev = 0;
@@ -37,10 +36,11 @@ bool check_baud = false;
 uint32_t baud_begin = 0;
 
 void loop() {
-  int tmp = analogRead(A0);
-  
+  int tmp = analogRead(A2);
+
   if ( tmp > r_slope and prev < r_slope and !check_amp ) // check amplitude
   {
+    //    Serial.println(tmp);
     check_amp = true; // is first max amplitude in that baud
     if ( !check_baud )
     {
@@ -49,18 +49,17 @@ void loop() {
     }
   }
 
-  if(tmp < r_slope and check_baud) {
+  if (tmp < r_slope and check_baud) {
     if (micros() - baud_begin > 9900 ) // full baud
     {
-      uint16_t last = (int(ceil(float(count - 5) / 3)) & 3) << (bit_check * 2);;  // shift data
+      uint16_t last = (int(ceil(float(count - 1) / 5)) & 3) << (bit_check * 2);;  // shift data
       data |= last;                                                 // add two new bits in data
       baud_check++;
-      Serial.print(count);
-      Serial.print(" ");
-      Serial.println(int(ceil(float(count - 6) / 3)));
+      //      Serial.print("COUNT\t\t");
+//      Serial.println(count);
       if (baud_check == 4) // 8 bits
       {
-        Serial.println((char)data);
+        Serial.print((char)data);
         data = 0;
         baud_check = 0;
         bit_check = -1;
@@ -69,8 +68,17 @@ void loop() {
       count = 0;
     }
   }
-  
-  if(tmp > r_slope and check_amp) {
+
+  if (micros() - baud_begin > 40000 ) {
+    data = 0;
+    baud_check = 0;
+    bit_check = -1;
+    check_amp = false;
+    check_baud = false;
+    count = 0;
+  }
+
+  if (tmp > r_slope and check_amp) {
     count++;
     check_baud = true;
     check_amp = false;
