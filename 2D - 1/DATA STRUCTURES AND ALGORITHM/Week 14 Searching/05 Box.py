@@ -1,22 +1,22 @@
-def maxSubArraySum(a,size): 
-       
-    max_so_far = None
-    max_ending_here = 0
-       
-    for i in range(0, size): 
-        max_ending_here = max_ending_here + int(a[i])
-        if not max_so_far:
-            max_so_far = max_ending_here
-        elif (max_so_far < max_ending_here): 
-            max_so_far = max_ending_here 
-  
-        if max_ending_here < 0: 
-            max_ending_here = 0   
-    return max_so_far 
+def minimum_weight(order_list, box):
+    if box == 1:
+        return sum(order_list)
+
+    min_weight = 999999999999999999999999999999999999999999999999999999999999999
+    for index in range(len(order_list)):
+
+        if len(order_list[index:]) < box - 1:
+            break
+
+        this_box    =   sum(order_list[:index])
+        other_box   =   minimum_weight(order_list[index:], box - 1)  # next box
+
+        min_weight  =   min(max(this_box, other_box), min_weight)  # find min of max of boxes
+            
+    return min_weight
 
 if __name__ == '__main__':
-    item, box = input('Enter Input : ').split('/')
-    a = item.split()
-    print("Maximum contiguous sum is", maxSubArraySum(a,len(a))) 
+    order, box = input('Enter Input : ').split('/')
+    order = list(map(int, order.split()))
 
-    # print(f'Minimum weight for {box} box(es) = {ans}')
+    print(f'Minimum weigth for {box} box(es) = {minimum_weight(order, int(box))}')
