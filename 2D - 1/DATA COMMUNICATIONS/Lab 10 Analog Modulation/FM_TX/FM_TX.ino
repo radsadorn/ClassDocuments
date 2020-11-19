@@ -36,49 +36,43 @@ void loop()
       inData[i] = inp[i];
       counter++;  
     }
-//    Serial.println(inp);
-//    Serial.println(counter);
-    for (int s=0;s<4;s++) //4 sample/cycle
-        {
-            dac.setVoltage(1000, false);//modify amplitude
-            delayMicroseconds(delay0);
-        }
-    for (int i=0;i<counter-1;i++) //send data
+
+    for (int s = 0; s < 4; s++) //4 sample/cycle
     {
-      //char preShifted = inData[i];
-      
+       dac.setVoltage(1000, false);//modify amplitude
+       delayMicroseconds(delay0);
+    }
+    for (int i = 0; i < counter - 1; i++) //send data
+    {
+
       for (int k = 7; k > 0; k -= 2) //send 8 bits from LSB tp MSB
       {
         int tmp = inData[i] & 3;
-      int useDelay,cyc;  
+        int useDelay,cyc;  
         if(tmp == 0)
         {
-          //Serial.println("00");
           cyc = 1;
           useDelay = delay0;   
         }
         else if(tmp == 1)
         {
-          //Serial.println("01");
           cyc = 6;
           useDelay = delay1;  
         }
         else if(tmp == 2)
         {
-          //Serial.println("10");
           cyc = 11;
           useDelay = delay2; 
         }
         else
         {
-          //Serial.println("11");
           cyc = 16;
           useDelay = delay3;  
         }
         
-        for (int sl=0;sl<cyc;sl++)
+        for (int sl = 0; sl < cyc; sl++)
         {
-          for (int s=0;s<4;s++) //4 sample/cycle
+          for (int s = 0; s < 4; s++) //4 sample/cycle
           {
             dac.setVoltage(S_DAC[s], false);//modify amplitude
             delayMicroseconds(useDelay);
@@ -86,6 +80,12 @@ void loop()
         }
         inData[i]>>=2;
       }
+    }
+
+    for (int s = 0; s < 4; s++) //4 sample/cycle
+    {
+       dac.setVoltage(1000, false);//modify amplitude
+       delayMicroseconds(delay0);
     }
     
     dac.setVoltage(0, false);

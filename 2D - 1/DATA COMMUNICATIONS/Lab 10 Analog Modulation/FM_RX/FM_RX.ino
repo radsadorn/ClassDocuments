@@ -40,7 +40,6 @@ void loop() {
 
   if ( tmp > r_slope and prev < r_slope and !check_amp ) // check amplitude
   {
-    //    Serial.println(tmp);
     check_amp = true; // is first max amplitude in that baud
     if ( !check_baud )
     {
@@ -56,7 +55,7 @@ void loop() {
       data |= last;                                                 // add two new bits in data
       baud_check++;
       //      Serial.print("COUNT\t\t");
-//      Serial.println(count);
+      //Serial.println(count);
       if (baud_check == 4) // 8 bits
       {
         Serial.print((char)data);
