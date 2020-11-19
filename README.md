@@ -18,3 +18,4 @@
 ### 📂 Semester 1
 * Data Communications
 * Data Structures and Algolithm
+* Digital System Fundamentals
