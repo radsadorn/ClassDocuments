@@ -37,14 +37,16 @@ void loop()
       counter++;  
     }
 
+    // open flag
     for (int s = 0; s < 4; s++) //4 sample/cycle
     {
        dac.setVoltage(1000, false);//modify amplitude
        delayMicroseconds(delay0);
     }
+
+    // data
     for (int i = 0; i < counter - 1; i++) //send data
     {
-
       for (int k = 7; k > 0; k -= 2) //send 8 bits from LSB tp MSB
       {
         int tmp = inData[i] & 3;
@@ -69,7 +71,8 @@ void loop()
           cyc = 16;
           useDelay = delay3;  
         }
-        
+
+        // send data
         for (int sl = 0; sl < cyc; sl++)
         {
           for (int s = 0; s < 4; s++) //4 sample/cycle
@@ -82,12 +85,14 @@ void loop()
       }
     }
 
+    // end flag
     for (int s = 0; s < 4; s++) //4 sample/cycle
     {
        dac.setVoltage(1000, false);//modify amplitude
        delayMicroseconds(delay0);
     }
-    
+
+    // default wave
     dac.setVoltage(0, false);
   }
 

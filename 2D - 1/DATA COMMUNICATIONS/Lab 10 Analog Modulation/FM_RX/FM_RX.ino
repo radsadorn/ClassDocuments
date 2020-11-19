@@ -52,10 +52,8 @@ void loop() {
     if (micros() - baud_begin > 9900 ) // full baud
     {
       uint16_t last = (int(ceil(float(count - 1) / 5)) & 3) << (bit_check * 2);;  // shift data
-      data |= last;                                                 // add two new bits in data
+      data |= last;                                                               // add two new bits in data
       baud_check++;
-      //      Serial.print("COUNT\t\t");
-      //Serial.println(count);
       if (baud_check == 4) // 8 bits
       {
         Serial.print((char)data);
@@ -68,6 +66,7 @@ void loop() {
     }
   }
 
+  // flush data
   if (micros() - baud_begin > 40000 ) {
     data = 0;
     baud_check = 0;
