@@ -20,7 +20,7 @@ void setup() {
   Serial.flush();
 
   Wire.begin();
-  radio.setFrequency(87.3);
+  radio.setFrequency(107.5);
 }
 
 int prev = 0;
@@ -40,6 +40,7 @@ void loop() {
 
   if ( tmp > r_slope and prev < r_slope and !check_amp ) // check amplitude
   {
+    Serial.println(tmp);
     check_amp = true; // is first max amplitude in that baud
     if ( !check_baud )
     {
@@ -49,9 +50,9 @@ void loop() {
   }
 
   if (tmp < r_slope and check_baud) {
-    if (micros() - baud_begin > 9900 ) // full baud
+    if (micros() - baud_begin > 11400 ) // full baud
     {
-      uint16_t last = (int(ceil(float(count - 1) / 5)) & 3) << (bit_check * 2);;  // shift data
+      uint16_t last = (int(ceil(float(count - 5) / 3)) & 3) << (bit_check * 2);;  // shift data
       data |= last;                                                               // add two new bits in data
       baud_check++;
       if (baud_check == 4) // 8 bits
