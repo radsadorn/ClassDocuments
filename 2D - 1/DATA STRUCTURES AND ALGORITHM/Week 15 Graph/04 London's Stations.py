@@ -299,32 +299,73 @@ platforms = {"Acton Town" : ["Ealing Common","South Ealing","Turnham Green","Chi
     "Wimbledon Park" : ["Southfields","Wimbledon"],
     "Wood Green" : ["Bounds Green","Turnpike Lane"],
     "Woodford" : ["Buckhurst Hill","Roding Valley","South Woodford"],
-    "Woodside Park" : ["Totteridge & Whetstone","West Finchley"]}
+    "Woodside Park" : ["Totteridge & Whetstone","West Finchley"]
+    }
 
-def shortest_path(src, des, path, short):
-    global platforms
-    if src == des and ( short == None or len(path) < len(short) ):
-        short = path
-        print(short)
-        return short
+class Graph:
 
-    for a in platforms.get(src, []):
-        if a not in path:
-            tmp = shortest_path(a, des, path + [a], short)
-            if tmp is not None:
-                short = tmp
+    def __init__(self):
+        self.weight = dict()
+        self.minimum_weight = 999999999999999999999999999999999999999999999999999999999999999
 
-    return short
+    def add_path(self, start, path):
+        self.weight[start] = self.weight.get(start, []) + [path]
+
+    def min_path(self, src, dist, visited):
+        minimum =  self.minimum_weight
+
+        for vertex in self.weight:
+            if dist[vertex][1] < minimum and vertex not in visited:
+                minimum = dist[vertex][1]
+                src = vertex
+
+        return src
+        
+    def dijkstra(self, src):
+        visited, dist = [], {}
+
+        for vertex in self.weight:  # set every vertex weight to infinity
+            dist[vertex] = [vertex, self.minimum_weight]
+        dist[src] = [src, 0]
+
+        for vertex in self.weight:  # find shortest_path of every vertex
+            src = self.min_path(src, dist, visited)
+            visited += [src]
+            for path in self.weight[src]:
+                v = path[0]
+                w = path[1]
+
+                if v not in visited and dist[v][1] > dist[src][1] + w:
+                    dist[v][1] = dist[src][1] + w
+                    dist[v][0] = src
+
+        return dist
+
+    def shortest_path(self, src, dest):
+        path = self.dijkstra(src)
+        tmp = []
+        while dest != src:
+            tmp.append(dest)
+            dest = path[dest][0]
+        ans = [src] + [a for a in reversed(tmp)]
+
+        return ans
+
+    def __str__(self):
+        return str(self.weight)
 
 if __name__ == '__main__':
 
-    src, des = input('Enter : ').split(',')
+    src, dest = input('Enter : ').split(',')
 
+    # Initial graph
+    g = Graph()
+    for vertex in platforms:
+        for edge in platforms[vertex]:
+            g.add_path(vertex, [edge, 1])
+
+    # Display
     print(f'From: {src}')
-    print(f'To: {des}')
+    print(f'To: {dest}')
     print('Searching shortest route... This may take a while...\nSuggested Route: ')
-
-    print(shortest_path(src, des, [src], None))
-
-
-
+    print(g.shortest_path(src, dest))
