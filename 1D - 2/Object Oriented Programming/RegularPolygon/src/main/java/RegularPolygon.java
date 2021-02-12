@@ -32,19 +32,19 @@ public class RegularPolygon {
 
     //get
     public int getNumberOfSides() {
-        return numberOfSides;
+        return  this.numberOfSides;
     }
 
     public int getLength() {
-        return length;
+        return  this.length;
     }
 
     public double getxOrigin() {
-        return xOrigin;
+        return  this.xOrigin;
     }
 
     public double getyOrigin() {
-        return yOrigin;
+        return  this.yOrigin;
     }
     
     public int  getPerimeter(){

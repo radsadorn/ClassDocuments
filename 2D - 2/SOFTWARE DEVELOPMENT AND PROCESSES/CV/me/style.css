@@ -1,0 +1,64 @@
+*{
+    margin-top: 10;
+    padding: 10;
+    font-family: sans-serif;
+    overflow:hidden;
+}
+
+.profile {
+    width: 50vh;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    padding: auto;
+}
+
+.profile #me {
+    width:50vh;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.profile #github {
+    width:50vh;
+}
+
+.profile #bt {
+    padding: 0px;
+}
+
+.greeting {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: auto;
+    height: 70vh;
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+    padding: 10px;
+    justify-content: center;
+}
+
+.info {
+    color: white;
+}
+
+.banner {
+    width: auto;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.footer {
+    padding: 35px 0px;
+    color: white;
+    background-color: black;
+    height: 10%;
+    text-align: center;
+}

@@ -15,7 +15,7 @@ public class Account {
     private int id;
     private double balance;
     private double annualInterestRate;
-    Date dateCreated ;
+    private Date dateCreated ;
     
     private double monthlyInterestRate;
     
