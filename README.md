@@ -19,3 +19,7 @@
 * Data Communications
 * Data Structures and Algolithm
 * Digital System Fundamentals
+
+### 📂 Semester 2
+* Probability and Statistics
+* Computer Organization and Assambly Language
