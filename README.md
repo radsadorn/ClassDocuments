@@ -23,3 +23,10 @@
 ### 📂 Semester 2
 * Probability and Statistics
 * Computer Organization and Assambly Language
+
+
+## ✔️ 3D - 2564
+
+### 📂 Semester 1
+* Operating System
+* Software Achitecture and Design
