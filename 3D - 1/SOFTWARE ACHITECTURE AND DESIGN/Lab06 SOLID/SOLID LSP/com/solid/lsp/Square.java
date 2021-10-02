@@ -7,7 +7,8 @@ public class Square extends Rectangle {
     }
 
     @Override
-    public void setWidth(int width) {this.setSide(width);
+    public void setWidth(int width) {
+        this.setSide(width);
     }
 
     @Override
