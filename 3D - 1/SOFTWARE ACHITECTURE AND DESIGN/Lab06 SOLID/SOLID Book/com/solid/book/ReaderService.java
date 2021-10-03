@@ -1,4 +1,4 @@
-public class PrintToScreen implements PrintService{
+public class ReaderService implements PrinterService{
     
     public void print(Book book) {
         do {

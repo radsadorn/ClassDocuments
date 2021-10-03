@@ -2,7 +2,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class PrintToFile implements PrintService{
+public class PublisherService implements PrinterService{
 
     public void print(Book book) {
         boolean isEven = false;

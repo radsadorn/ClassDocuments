@@ -1,6 +1,6 @@
 package com.solid.lsp;
 
-public class Rectangle {
+public class Rectangle implements Shape {
     // DO NOT EDIT THE FILE FROM THIS LINE ONWARD!!
     private int width;
     private int height;
