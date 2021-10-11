@@ -8,7 +8,7 @@ import java.io.StringWriter;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-public class CSVBookMetadataFormatter implements BookMetadataFormatter {
+public class  CSVBookMetadataFormatter implements BookMetadataFormatter {
 
     private StringWriter writer;
     private CSVPrinter csvPrinter;
@@ -29,7 +29,6 @@ public class CSVBookMetadataFormatter implements BookMetadataFormatter {
         return this;
     }
 
-    @Override
     public BookMetadataFormatter append(Book b) {
         String authors = String.join("|", b.getAuthors());
         try {
@@ -40,7 +39,6 @@ public class CSVBookMetadataFormatter implements BookMetadataFormatter {
         return this;
     }
 
-    @Override
     public String getMetadataString() {
         return writer.toString();
     }

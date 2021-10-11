@@ -1,3 +1,8 @@
 /.gradle
 /.idea
+/bin
 /build
+/src/.idea
+
+.classpath
+.project

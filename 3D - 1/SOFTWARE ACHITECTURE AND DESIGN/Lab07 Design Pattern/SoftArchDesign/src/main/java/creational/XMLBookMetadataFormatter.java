@@ -36,7 +36,6 @@ public class XMLBookMetadataFormatter implements BookMetadataFormatter {
         return this;
     }
 
-    @Override
     public BookMetadataFormatter append(Book b) {
         Element e;
         e = document.createElement(Book.class.getSimpleName());
@@ -60,7 +59,6 @@ public class XMLBookMetadataFormatter implements BookMetadataFormatter {
         return node;
     }
 
-    @Override
     public String getMetadataString() {
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         try {
