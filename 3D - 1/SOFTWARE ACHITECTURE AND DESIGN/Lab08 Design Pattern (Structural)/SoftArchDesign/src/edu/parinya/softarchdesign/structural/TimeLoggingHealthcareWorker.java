@@ -9,8 +9,6 @@ public class TimeLoggingHealthcareWorker extends HealthcareWorkerDecorator {
         System.out.println(" with TimeLogging");
     }
 
-    public String getName() { return super.getName(); }
-
     public void service() {
         Date timestamp = new Date();
         System.out.print(timestamp.toString() + ": ");

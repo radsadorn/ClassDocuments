@@ -5,6 +5,7 @@ public abstract class HealthcareWorkerDecorator extends HealthcareWorker{
 
     HealthcareWorkerDecorator(HealthcareServiceable worker) {
         super((HealthcareWorker) worker);
+        
         this.worker = worker;
         System.out.print("Decorate " + this.getName());
     }

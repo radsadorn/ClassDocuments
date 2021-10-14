@@ -1,6 +1,5 @@
 package edu.parinya.softarchdesign.structural;
 
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 

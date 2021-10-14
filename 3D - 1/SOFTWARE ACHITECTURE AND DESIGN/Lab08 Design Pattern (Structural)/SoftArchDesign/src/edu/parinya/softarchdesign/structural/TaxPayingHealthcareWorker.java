@@ -6,8 +6,6 @@ public class TaxPayingHealthcareWorker extends HealthcareWorkerDecorator{
         System.out.println(" with TaxPaying");
     }
 
-    public String getName() { return super.getName(); }
-
     public double getPrice() {
         return super.getPrice() * 1.10;
     }
