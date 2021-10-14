@@ -1,2 +1,19 @@
-package edu.parinya.softarchdesign.structural;public class TimeLoggingHealthcareWorker {
+package edu.parinya.softarchdesign.structural;
+
+import java.util.Date;
+
+public class TimeLoggingHealthcareWorker extends HealthcareWorkerDecorator {
+
+    TimeLoggingHealthcareWorker(HealthcareServiceable worker) {
+        super(worker);
+        System.out.println(" with TimeLogging");
+    }
+
+    public String getName() { return super.getName(); }
+
+    public void service() {
+        Date timestamp = new Date();
+        System.out.print(timestamp.toString() + ": ");
+        super.service();
+    }
 }
