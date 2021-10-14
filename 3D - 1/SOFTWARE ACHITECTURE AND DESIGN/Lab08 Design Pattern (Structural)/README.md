@@ -16,10 +16,10 @@ The structure of the zip file can be described as follows:
     - Surgeon.java - one for many subclasses of HealthcareWorker. YOU SHOULD NOT NEED TO MODIFY THIS FILE.
 
 Your tasks for this assignment require you to implement the following files:
-    - HealthcareWorkerTeam.java - a container class for the Composite Pattern.
-    - HealthcareWorkerDecorator.java - an abstract based class for the Decorator Pattern.
-    - TimeLoggingHealthcareWorker.java - a decorator class that lets a HealthcareWorker instance print timestamp before its service.
-    - TaxPayingHealthcareWorker.java - a decorator class that adds 10% tax to the normal price of a HealthcareWork instance.
+  - HealthcareWorkerTeam.java - a container class for the Composite Pattern.
+  - HealthcareWorkerDecorator.java - an abstract based class for the Decorator Pattern.
+  - TimeLoggingHealthcareWorker.java - a decorator class that lets a HealthcareWorker instance print timestamp before its service.
+  - TaxPayingHealthcareWorker.java - a decorator class that adds 10% tax to the normal price of a HealthcareWork instance.
 ### Your tasks
 1. The first task involves Composite Pattern. Please look at HealthcareWorker.svg and create HealthcareWorkerTeam.java accordingly. You may look at Main.java to see the expected usages.
 2. The second tasks involves Decorator Pattern. Please look at HealthcareWorker.svg and create HealthcareWorkerDecorator.java, TimeLoggingHealthcareWorker.java and TaxPayingHealthcareWorker.java accordingly.
