@@ -3,6 +3,7 @@
 /bin
 /build
 /src/.idea
+/out
 
 .classpath
 .project
