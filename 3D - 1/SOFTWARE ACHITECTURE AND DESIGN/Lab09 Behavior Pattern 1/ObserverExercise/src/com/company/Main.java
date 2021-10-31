@@ -16,6 +16,7 @@ public class Main {
 
         String stringList[] = { "KMITL", "31-10-2564", "2021", "COVID-19", "SAD", "(^-^)", "Hello World!", "Behavior Patterns", "1234567890"};
         for (String s : stringList) {
+            System.out.println("String : \"" + s + "\"");
             publisher.publish(s);
         }
 

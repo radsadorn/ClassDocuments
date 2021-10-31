@@ -18,14 +18,12 @@ public class AlphabetSubscriber extends StringSubscriber {
 
     @Override
     public void onNext(Object item) {
-        System.out.println("String : \"" + item + "\"");
-
         try {
             FileWriter fileWriter = new FileWriter(workingDir, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
             printWriter.printf(item + "\n");
             printWriter.close();
-            System.out.println("\t\t was received by Alphabet Subscriber.\n");
+            System.out.println("\t\tIt was received by Alphabet Subscriber.");
         } catch (IOException ex) {
             this.onError(ex);
         }
