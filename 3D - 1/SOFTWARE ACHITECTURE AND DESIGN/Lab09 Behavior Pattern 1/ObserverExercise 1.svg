@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="583px" preserveAspectRatio="none" style="width:941px;height:583px;background:#FFFFFF;" version="1.1" viewBox="0 0 941 583" width="941px" zoomAndPan="magnify"><defs><filter height="300%" id="fnpen75mb4hl5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[baf8362e8cd2e8a67ceadf508e3f4f33]
+cluster java.util.concurrent.Flow--><polygon fill="#FFFFFF" filter="url(#fnpen75mb4hl5)" points="131,6,311,6,318,29.6094,513,29.6094,513,90,131,90,131,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="131" x2="318" y1="29.6094" y2="29.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="174" x="135" y="22.5332">java.util.concurrent.Flow</text><!--MD5=[f4761ba6406897a67e920bc50e0fc433]
+class java.util.concurrent.Flow.Publisher--><rect codeLine="3" fill="#FEFECE" filter="url(#fnpen75mb4hl5)" height="32" id="java.util.concurrent.Flow.Publisher" style="stroke:#A80036;stroke-width:1.5;" width="85" x="147.5" y="42"/><ellipse cx="162.5" cy="58" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M163.5,55 L163.5,61 L165.5,61 L165.9844,61 L166.5,61.625 L166.5,62 L166.5,62.375 L165.9844,63 L165.5,63 L159.5,63 L159.0156,63 L158.5,62.375 L158.5,62 L158.5,61.625 L159.0156,61 L159.5,61 L161.5,61 L161.5,55 L159.5,55 L159.0156,55 L158.5,54.375 L158.5,54 L158.5,53.625 L159.0156,53 L159.5,53 L165.5,53 L165.9844,53 L166.5,53.625 L166.5,54 L166.5,54.375 L165.9844,55 L165.5,55 L163.5,55 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="53" x="176.5" y="62.9102">Publisher</text><!--MD5=[7b1f47d25cf9aa8b3b97dba20e7977f2]
+class java.util.concurrent.Flow.Subscription--><rect codeLine="4" fill="#FEFECE" filter="url(#fnpen75mb4hl5)" height="32" id="java.util.concurrent.Flow.Subscription" style="stroke:#A80036;stroke-width:1.5;" width="101" x="267.5" y="42"/><ellipse cx="282.5" cy="58" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M283.5,55 L283.5,61 L285.5,61 L285.9844,61 L286.5,61.625 L286.5,62 L286.5,62.375 L285.9844,63 L285.5,63 L279.5,63 L279.0156,63 L278.5,62.375 L278.5,62 L278.5,61.625 L279.0156,61 L279.5,61 L281.5,61 L281.5,55 L279.5,55 L279.0156,55 L278.5,54.375 L278.5,54 L278.5,53.625 L279.0156,53 L279.5,53 L285.5,53 L285.9844,53 L286.5,53.625 L286.5,54 L286.5,54.375 L285.9844,55 L285.5,55 L283.5,55 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="69" x="296.5" y="62.9102">Subscription</text><!--MD5=[f2ac03910113b394514a199118185f50]
+class java.util.concurrent.Flow.Subscriber--><rect codeLine="5" fill="#FEFECE" filter="url(#fnpen75mb4hl5)" height="32" id="java.util.concurrent.Flow.Subscriber" style="stroke:#A80036;stroke-width:1.5;" width="93" x="403.5" y="42"/><ellipse cx="418.5" cy="58" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M419.5,55 L419.5,61 L421.5,61 L421.9844,61 L422.5,61.625 L422.5,62 L422.5,62.375 L421.9844,63 L421.5,63 L415.5,63 L415.0156,63 L414.5,62.375 L414.5,62 L414.5,61.625 L415.0156,61 L415.5,61 L417.5,61 L417.5,55 L415.5,55 L415.0156,55 L414.5,54.375 L414.5,54 L414.5,53.625 L415.0156,53 L415.5,53 L421.5,53 L421.9844,53 L422.5,53.625 L422.5,54 L422.5,54.375 L421.9844,55 L421.5,55 L419.5,55 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="61" x="432.5" y="62.9102">Subscriber</text><!--MD5=[bf14fa5a10a28af2d0922e59f687142f]
+class StringPublisher--><rect codeLine="7" fill="#FEFECE" filter="url(#fnpen75mb4hl5)" height="89.5078" id="StringPublisher" style="stroke:#A80036;stroke-width:1.5;" width="288" x="7" y="317.5"/><ellipse cx="104.25" cy="333.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M106.25,330 Q106.4531,329.5 106.6875,329.25 Q106.9219,329 107.1875,329 Q107.6563,329 107.9531,329.2813 Q108.25,329.5625 108.25,330.2188 L108.25,331.7813 Q108.25,332.4375 107.9688,332.7188 Q107.6875,333 107.25,333 Q106.8594,333 106.6094,332.8281 Q106.3594,332.6563 106.25,332.2031 Q106.2031,331.8906 106.0313,331.7188 Q105.7188,331.3906 105.1563,331.2031 Q104.5938,331 104.0313,331 Q103.3281,331 102.7344,331.2813 Q102.1563,331.5625 101.7031,332.1875 Q101.25,332.8125 101.25,333.6719 L101.25,334.5938 Q101.25,335.625 102.0938,336.3125 Q102.9375,337 104.4375,337 Q105.3281,337 105.9531,336.7969 Q106.3125,336.6875 106.7188,336.3281 Q106.9844,336.125 107.125,336.0625 Q107.2656,336 107.4375,336 Q107.7656,336 108,336.2656 Q108.25,336.5156 108.25,336.875 Q108.25,337.2188 107.9063,337.625 Q107.4063,338.2188 106.6094,338.5469 Q105.5625,339 104.2813,339 Q102.7813,339 101.5781,338.4063 Q100.6094,337.9375 99.9219,336.9219 Q99.25,335.9063 99.25,334.7031 L99.25,333.6094 Q99.25,332.3594 99.8438,331.2656 Q100.4531,330.1719 101.5,329.5938 Q102.5625,329 103.75,329 Q104.4688,329 105.0938,329.25 Q105.7188,329.5 106.25,330 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="85" x="124.75" y="338.4102">StringPublisher</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="294" y1="349.5" y2="349.5"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="13" y="364.9189">...</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="294" y1="371.3359" y2="371.3359"/><ellipse cx="18" cy="382.3359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="262" x="27" y="386.7549">subscribe(subscriber : Flow.Subscriber&lt;String&gt; : void</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="27" y="400.5908">...</text><!--MD5=[fe8f57fe165bee7eb13c253306584c6c]
+class StringSubscription--><rect codeLine="12" fill="#FEFECE" filter="url(#fnpen75mb4hl5)" height="103.3438" id="StringSubscription" style="stroke:#A80036;stroke-width:1.5;" width="135" x="250.5" y="134"/><ellipse cx="266.4" cy="150" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M268.4,146.5 Q268.6031,146 268.8375,145.75 Q269.0719,145.5 269.3375,145.5 Q269.8063,145.5 270.1031,145.7813 Q270.4,146.0625 270.4,146.7188 L270.4,148.2813 Q270.4,148.9375 270.1188,149.2188 Q269.8375,149.5 269.4,149.5 Q269.0094,149.5 268.7594,149.3281 Q268.5094,149.1563 268.4,148.7031 Q268.3531,148.3906 268.1813,148.2188 Q267.8688,147.8906 267.3063,147.7031 Q266.7438,147.5 266.1813,147.5 Q265.4781,147.5 264.8844,147.7813 Q264.3063,148.0625 263.8531,148.6875 Q263.4,149.3125 263.4,150.1719 L263.4,151.0938 Q263.4,152.125 264.2438,152.8125 Q265.0875,153.5 266.5875,153.5 Q267.4781,153.5 268.1031,153.2969 Q268.4625,153.1875 268.8688,152.8281 Q269.1344,152.625 269.275,152.5625 Q269.4156,152.5 269.5875,152.5 Q269.9156,152.5 270.15,152.7656 Q270.4,153.0156 270.4,153.375 Q270.4,153.7188 270.0563,154.125 Q269.5563,154.7188 268.7594,155.0469 Q267.7125,155.5 266.4313,155.5 Q264.9313,155.5 263.7281,154.9063 Q262.7594,154.4375 262.0719,153.4219 Q261.4,152.4063 261.4,151.2031 L261.4,150.1094 Q261.4,148.8594 261.9938,147.7656 Q262.6031,146.6719 263.65,146.0938 Q264.7125,145.5 265.9,145.5 Q266.6188,145.5 267.2438,145.75 Q267.8688,146 268.4,146.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="101" x="280.6" y="154.9102">StringSubscription</text><line style="stroke:#A80036;stroke-width:1.5;" x1="251.5" x2="384.5" y1="166" y2="166"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="256.5" y="181.4189">...</text><line style="stroke:#A80036;stroke-width:1.5;" x1="251.5" x2="384.5" y1="187.8359" y2="187.8359"/><ellipse cx="261.5" cy="198.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="270.5" y="203.2549">request(long : n) : void</text><ellipse cx="261.5" cy="212.6719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="69" x="270.5" y="217.0908">cancel() : void</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="270.5" y="230.9268">...</text><!--MD5=[9f7c7ce47e22c6403e01d69f06628750]
+class StringSubscriber--><rect codeLine="18" fill="#FEFECE" filter="url(#fnpen75mb4hl5)" height="131.0156" id="StringSubscriber" style="stroke:#A80036;stroke-width:1.5;" width="287" x="330.5" y="297"/><ellipse cx="423.25" cy="313" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M425,314.5 L421.7031,314.5 L421.2656,315.5 L421.2656,315.5 L421.7344,315.5 L422.25,316.125 L422.25,316.5 L422.25,316.875 L421.7344,317.5 L421.2656,317.5 L419.375,317.5 L418.7656,317.5 L418.25,316.875 L418.25,316.5 L418.25,316.125 L418.7656,315.5 L419.375,315.5 L421.6875,309.5 L420.8125,309.5 L419.7656,309.5 L419.25,308.875 L419.25,308.5 L419.25,308.125 L419.7656,307.5 L420.8125,307.5 L424.4844,307.5 L427.1719,315.5 L427.7344,315.5 L427.7344,315.5 L428.25,316.125 L428.25,316.5 L428.25,316.875 L427.7344,317.5 L427.1719,317.5 L425.2813,317.5 L424.7656,317.5 L424.25,316.875 L424.25,316.5 L424.25,316.125 L424.7656,315.5 L425.2813,315.5 L425.2813,315.5 L425,314.5 Z M424.4531,312.5 L423.25,308.9219 L422.2188,312.5 L424.4531,312.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="93" x="443.75" y="317.9102">StringSubscriber</text><line style="stroke:#A80036;stroke-width:1.5;" x1="331.5" x2="616.5" y1="329" y2="329"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="336.5" y="344.4189">...</text><line style="stroke:#A80036;stroke-width:1.5;" x1="331.5" x2="616.5" y1="350.8359" y2="350.8359"/><ellipse cx="341.5" cy="361.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="261" x="350.5" y="366.2549">onSubscribe(subscription : Flow.Subscription) : void</text><ellipse cx="341.5" cy="375.6719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="131" x="350.5" y="380.0908">onNext(item : String) : void</text><ellipse cx="341.5" cy="389.5078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="183" x="350.5" y="393.9268">onError(throwable : Throwable) : void</text><ellipse cx="341.5" cy="403.3438" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="350.5" y="407.7627">onComplete() : void</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="350.5" y="421.5986">...</text><!--MD5=[24a09cf707b171dcefd759762c31cbea]
+class AlphabetSubscriber--><rect codeLine="26" fill="#FEFECE" filter="url(#fnpen75mb4hl5)" height="81.5078" id="AlphabetSubscriber" style="stroke:#A80036;stroke-width:1.5;" width="279" x="20.5" y="488"/><ellipse cx="101.75" cy="504" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M103.75,500.5 Q103.9531,500 104.1875,499.75 Q104.4219,499.5 104.6875,499.5 Q105.1563,499.5 105.4531,499.7813 Q105.75,500.0625 105.75,500.7188 L105.75,502.2813 Q105.75,502.9375 105.4688,503.2188 Q105.1875,503.5 104.75,503.5 Q104.3594,503.5 104.1094,503.3281 Q103.8594,503.1563 103.75,502.7031 Q103.7031,502.3906 103.5313,502.2188 Q103.2188,501.8906 102.6563,501.7031 Q102.0938,501.5 101.5313,501.5 Q100.8281,501.5 100.2344,501.7813 Q99.6563,502.0625 99.2031,502.6875 Q98.75,503.3125 98.75,504.1719 L98.75,505.0938 Q98.75,506.125 99.5938,506.8125 Q100.4375,507.5 101.9375,507.5 Q102.8281,507.5 103.4531,507.2969 Q103.8125,507.1875 104.2188,506.8281 Q104.4844,506.625 104.625,506.5625 Q104.7656,506.5 104.9375,506.5 Q105.2656,506.5 105.5,506.7656 Q105.75,507.0156 105.75,507.375 Q105.75,507.7188 105.4063,508.125 Q104.9063,508.7188 104.1094,509.0469 Q103.0625,509.5 101.7813,509.5 Q100.2813,509.5 99.0781,508.9063 Q98.1094,508.4375 97.4219,507.4219 Q96.75,506.4063 96.75,505.2031 L96.75,504.1094 Q96.75,502.8594 97.3438,501.7656 Q97.9531,500.6719 99,500.0938 Q100.0625,499.5 101.25,499.5 Q101.9688,499.5 102.5938,499.75 Q103.2188,500 103.75,500.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="122.25" y="508.9102">AlphabetSubscriber</text><line style="stroke:#A80036;stroke-width:1.5;" x1="21.5" x2="298.5" y1="520" y2="520"/><ellipse cx="31.5" cy="531" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="253" x="40.5" y="535.4189">onSubscribe(subscription : Flow.Subscription) : void</text><ellipse cx="31.5" cy="544.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="127" x="40.5" y="549.2549">onNext(item : String) : void</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="40.5" y="563.0908">...</text><!--MD5=[ed85247a8e36ac9eb1f703536470d263]
+class NumberSubscriber--><rect codeLine="31" fill="#FEFECE" filter="url(#fnpen75mb4hl5)" height="81.5078" id="NumberSubscriber" style="stroke:#A80036;stroke-width:1.5;" width="279" x="334.5" y="488"/><ellipse cx="417.25" cy="504" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M419.25,500.5 Q419.4531,500 419.6875,499.75 Q419.9219,499.5 420.1875,499.5 Q420.6563,499.5 420.9531,499.7813 Q421.25,500.0625 421.25,500.7188 L421.25,502.2813 Q421.25,502.9375 420.9688,503.2188 Q420.6875,503.5 420.25,503.5 Q419.8594,503.5 419.6094,503.3281 Q419.3594,503.1563 419.25,502.7031 Q419.2031,502.3906 419.0313,502.2188 Q418.7188,501.8906 418.1563,501.7031 Q417.5938,501.5 417.0313,501.5 Q416.3281,501.5 415.7344,501.7813 Q415.1563,502.0625 414.7031,502.6875 Q414.25,503.3125 414.25,504.1719 L414.25,505.0938 Q414.25,506.125 415.0938,506.8125 Q415.9375,507.5 417.4375,507.5 Q418.3281,507.5 418.9531,507.2969 Q419.3125,507.1875 419.7188,506.8281 Q419.9844,506.625 420.125,506.5625 Q420.2656,506.5 420.4375,506.5 Q420.7656,506.5 421,506.7656 Q421.25,507.0156 421.25,507.375 Q421.25,507.7188 420.9063,508.125 Q420.4063,508.7188 419.6094,509.0469 Q418.5625,509.5 417.2813,509.5 Q415.7813,509.5 414.5781,508.9063 Q413.6094,508.4375 412.9219,507.4219 Q412.25,506.4063 412.25,505.2031 L412.25,504.1094 Q412.25,502.8594 412.8438,501.7656 Q413.4531,500.6719 414.5,500.0938 Q415.5625,499.5 416.75,499.5 Q417.4688,499.5 418.0938,499.75 Q418.7188,500 419.25,500.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="105" x="437.75" y="508.9102">NumberSubscriber</text><line style="stroke:#A80036;stroke-width:1.5;" x1="335.5" x2="612.5" y1="520" y2="520"/><ellipse cx="345.5" cy="531" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="253" x="354.5" y="535.4189">onSubscribe(subscription : Flow.Subscription) : void</text><ellipse cx="345.5" cy="544.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="127" x="354.5" y="549.2549">onNext(item : String) : void</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="354.5" y="563.0908">...</text><!--MD5=[47ada0b160991676eadf805e1629f122]
+class SymbolSubscriber--><rect codeLine="36" fill="#FEFECE" filter="url(#fnpen75mb4hl5)" height="81.5078" id="SymbolSubscriber" style="stroke:#A80036;stroke-width:1.5;" width="279" x="648.5" y="488"/><ellipse cx="733.25" cy="504" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M735.25,500.5 Q735.4531,500 735.6875,499.75 Q735.9219,499.5 736.1875,499.5 Q736.6563,499.5 736.9531,499.7813 Q737.25,500.0625 737.25,500.7188 L737.25,502.2813 Q737.25,502.9375 736.9688,503.2188 Q736.6875,503.5 736.25,503.5 Q735.8594,503.5 735.6094,503.3281 Q735.3594,503.1563 735.25,502.7031 Q735.2031,502.3906 735.0313,502.2188 Q734.7188,501.8906 734.1563,501.7031 Q733.5938,501.5 733.0313,501.5 Q732.3281,501.5 731.7344,501.7813 Q731.1563,502.0625 730.7031,502.6875 Q730.25,503.3125 730.25,504.1719 L730.25,505.0938 Q730.25,506.125 731.0938,506.8125 Q731.9375,507.5 733.4375,507.5 Q734.3281,507.5 734.9531,507.2969 Q735.3125,507.1875 735.7188,506.8281 Q735.9844,506.625 736.125,506.5625 Q736.2656,506.5 736.4375,506.5 Q736.7656,506.5 737,506.7656 Q737.25,507.0156 737.25,507.375 Q737.25,507.7188 736.9063,508.125 Q736.4063,508.7188 735.6094,509.0469 Q734.5625,509.5 733.2813,509.5 Q731.7813,509.5 730.5781,508.9063 Q729.6094,508.4375 728.9219,507.4219 Q728.25,506.4063 728.25,505.2031 L728.25,504.1094 Q728.25,502.8594 728.8438,501.7656 Q729.4531,500.6719 730.5,500.0938 Q731.5625,499.5 732.75,499.5 Q733.4688,499.5 734.0938,499.75 Q734.7188,500 735.25,500.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="101" x="753.75" y="508.9102">SymbolSubscriber</text><line style="stroke:#A80036;stroke-width:1.5;" x1="649.5" x2="926.5" y1="520" y2="520"/><ellipse cx="659.5" cy="531" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="253" x="668.5" y="535.4189">onSubscribe(subscription : Flow.Subscription) : void</text><ellipse cx="659.5" cy="544.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="127" x="668.5" y="549.2549">onNext(item : String) : void</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="668.5" y="563.0908">...</text><!--MD5=[1ac87ffe7e4b8a4f93bcfa2f84832181]
+reverse link java.util.concurrent.Flow.Publisher to StringPublisher--><path codeLine="42" d="M185.5,93.9 C178.38,149.17 164.5,256.76 156.7,317.32 " fill="none" id="java.util.concurrent.Flow.Publisher-backto-StringPublisher" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="178.57,92.94,188.07,74,192.45,94.73,178.57,92.94" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3c288e8ef2c86f959ba97fdb74269064]
+reverse link java.util.concurrent.Flow.Subscriber to StringSubscriber--><path codeLine="43" d="M452.79,94.11 C456.71,143.62 463.95,234.84 468.87,296.82 " fill="none" id="java.util.concurrent.Flow.Subscriber-backto-StringSubscriber" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="445.79,94.49,451.19,74,459.75,93.38,445.79,94.49" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f0eccc7349db78182a194590348499a8]
+reverse link java.util.concurrent.Flow.Subscription to StringSubscription--><path codeLine="44" d="M318,94.59 C318,106.82 318,120.75 318,133.94 " fill="none" id="java.util.concurrent.Flow.Subscription-backto-StringSubscription" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="311,94.39,318,74.39,325,94.39,311,94.39" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[87e84080d96441481bb70d3805bac4fe]
+reverse link StringSubscriber to AlphabetSubscriber--><path codeLine="45" d="M333.05,437.34 C299.88,454.72 265.75,472.6 236.66,487.84 " fill="none" id="StringSubscriber-backto-AlphabetSubscriber" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="329.84,431.12,350.8,428.04,336.33,443.52,329.84,431.12" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f3042edf95f6c6d513e3622fbbd4ca66]
+reverse link StringSubscriber to NumberSubscriber--><path codeLine="46" d="M474,448.19 C474,462.02 474,475.76 474,487.84 " fill="none" id="StringSubscriber-backto-NumberSubscriber" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="467,448.04,474,428.04,481,448.04,467,448.04" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[04a5263ae2214e6e962528ba1e214ddd]
+reverse link StringSubscriber to SymbolSubscriber--><path codeLine="47" d="M614.95,437.34 C648.12,454.72 682.25,472.6 711.34,487.84 " fill="none" id="StringSubscriber-backto-SymbolSubscriber" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="611.67,443.52,597.2,428.04,618.16,431.12,611.67,443.52" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf89f025c835ce47c279a2e797184356]
+reverse link StringSubscription to StringPublisher--><path codeLine="48" d="M265.98,241.01 C242.59,265.53 215.34,294.08 193.24,317.24 " fill="none" id="StringSubscription-backto-StringPublisher" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="269.7,237.12,260.5962,240.8777,266.2514,240.7403,266.3887,246.3955,269.7,237.12" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[02f6b5716ed2f7da3bbe358b3ded6bd3]
+reverse link StringSubscription to StringSubscriber--><path codeLine="49" d="M366.67,241.1 C382.45,258.8 400.1,278.6 416.46,296.95 " fill="none" id="StringSubscription-backto-StringSubscriber" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="363.12,237.12,366.0918,246.5098,366.4347,240.8633,372.0812,241.2062,363.12,237.12" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9eb5e56d9fb5de05212e8d33853da8e6]
+@startuml
+'https://plantuml.com/class-diagram
+
+interface java.util.concurrent.Flow.Publisher
+interface java.util.concurrent.Flow.Subscription
+interface java.util.concurrent.Flow.Subscriber
+
+class StringPublisher {
+    <b>...</b>
+    + subscribe(subscriber : Flow.Subscriber<String> : void
+    {method} <b>...</b>
+}
+class StringSubscription {
+    <b>...</b>
+    + request(long : n) : void
+    + cancel() : void
+    {method} <b>...</b>
+}
+abstract StringSubscriber {
+    <b>...</b>
+    + {abstract} onSubscribe(subscription : Flow.Subscription) : void
+    + {abstract} onNext(item : String) : void
+    + onError(throwable : Throwable) : void
+    + onComplete() : void
+    {method} <b>...</b>
+}
+class AlphabetSubscriber {
+    + onSubscribe(subscription : Flow.Subscription) : void
+    + onNext(item : String) : void
+    {method} <b>...</b>
+}
+class NumberSubscriber {
+    + onSubscribe(subscription : Flow.Subscription) : void
+    + onNext(item : String) : void
+    {method} <b>...</b>
+}
+class SymbolSubscriber {
+    + onSubscribe(subscription : Flow.Subscription) : void
+    + onNext(item : String) : void
+    {method} <b>...</b>
+}
+
+java.util.concurrent.Flow.Publisher  ^.d.    StringPublisher
+java.util.concurrent.Flow.Subscriber ^.d.    StringSubscriber
+java.util.concurrent.Flow.Subscription  ^.d.    StringSubscription
+StringSubscriber    ^-d-    AlphabetSubscriber
+StringSubscriber    ^-d-    NumberSubscriber
+StringSubscriber    ^-d-    SymbolSubscriber
+StringSubscription  <.d.    StringPublisher
+StringSubscription  <.d.    StringSubscriber
+
+hide empty members
+@enduml
+
+@startuml
+
+interface java.util.concurrent.Flow.Publisher
+interface java.util.concurrent.Flow.Subscription
+interface java.util.concurrent.Flow.Subscriber
+
+class StringPublisher {
+    <b>...</b>
+    + subscribe(subscriber : Flow.Subscriber<String> : void
+    {method} <b>...</b>
+}
+class StringSubscription {
+    <b>...</b>
+    + request(long : n) : void
+    + cancel() : void
+    {method} <b>...</b>
+}
+abstract StringSubscriber {
+    <b>...</b>
+    + {abstract} onSubscribe(subscription : Flow.Subscription) : void
+    + {abstract} onNext(item : String) : void
+    + onError(throwable : Throwable) : void
+    + onComplete() : void
+    {method} <b>...</b>
+}
+class AlphabetSubscriber {
+    + onSubscribe(subscription : Flow.Subscription) : void
+    + onNext(item : String) : void
+    {method} <b>...</b>
+}
+class NumberSubscriber {
+    + onSubscribe(subscription : Flow.Subscription) : void
+    + onNext(item : String) : void
+    {method} <b>...</b>
+}
+class SymbolSubscriber {
+    + onSubscribe(subscription : Flow.Subscription) : void
+    + onNext(item : String) : void
+    {method} <b>...</b>
+}
+
+java.util.concurrent.Flow.Publisher  ^.d.    StringPublisher
+java.util.concurrent.Flow.Subscriber ^.d.    StringSubscriber
+java.util.concurrent.Flow.Subscription  ^.d.    StringSubscription
+StringSubscriber    ^-d-    AlphabetSubscriber
+StringSubscriber    ^-d-    NumberSubscriber
+StringSubscriber    ^-d-    SymbolSubscriber
+StringSubscription  <.d.    StringPublisher
+StringSubscription  <.d.    StringSubscriber
+
+hide empty members
+@enduml
+
+PlantUML version 1.2021.11(Sat Oct 02 20:26:11 ICT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
