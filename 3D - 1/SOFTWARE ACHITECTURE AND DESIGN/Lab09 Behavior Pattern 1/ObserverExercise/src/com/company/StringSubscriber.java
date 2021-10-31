@@ -6,7 +6,7 @@ public abstract class StringSubscriber implements Flow.Subscriber {
 
     @Override
     public void onError(Throwable throwable) {
-        System.out.println(throwable.toString() + "\n");
+        System.out.println("Error!! " + throwable.toString() + "\n");
     }
 
     @Override
