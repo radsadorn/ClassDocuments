@@ -18,9 +18,10 @@ public class StringPublisher implements Flow.Publisher {
     }
 
     public void publish(String item) {
-        for (Flow.Subscriber subscriber: subscribers)
-            if (((StringSubscriber) subscriber).checkContains(item))
+        for (Flow.Subscriber subscriber: subscribers) {
+            if (((StringSubscriber) subscriber).checkContains(item)) {
                 subscriber.onNext(item);
-
+            }
+        }
     }
 }

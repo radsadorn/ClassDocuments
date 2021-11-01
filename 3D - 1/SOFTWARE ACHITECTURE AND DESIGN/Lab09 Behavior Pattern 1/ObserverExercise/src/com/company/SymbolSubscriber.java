@@ -31,6 +31,6 @@ public class SymbolSubscriber extends StringSubscriber {
 
     @Override
     public boolean checkContains(String item) {
-        return !item.matches("[a-zA-Z0-9.]*");
+        return !item.matches("[a-zA-Z0-9 .]*");
     }
 }
